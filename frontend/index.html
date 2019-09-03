@@ -7,6 +7,8 @@
     <title>No Dubts</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Default CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -34,69 +36,71 @@
     <script defer src="assets/js/bootstrap.bundle.js"></script>
   </head>
   <body>
+    <div class="banner"></div>
+    
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <img
-            src="assets/img/logo.png"
-            width="120"
-            height="65"
-            class="d-inline-block align-top"
-            alt="No Dubts"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Alterna navegação"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Perguntas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tópicos</a>
-            </li>
-          </ul>
-          <div class="mr-auto mt-2 mt-lg-0">
-            <form class="form-inline my-2 my-lg-0">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Pesquisar"
-                aria-label="Pesquisar"
-              />
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/img/logo.png"
+              width="120"
+              height="65"
+              class="d-inline-block align-top"
+              alt="No Dubts"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Alterna navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Perguntas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Tópicos</a>
+              </li>
+            </ul>
+            <div class="col-md-6 col-sm-12 mr-auto mt-lg-0 pl-0 pr-0">
+              <form class="form-inline my-2 my-lg-0">
+                <input
+                  class="form-control col-8 col-md-10 search"
+                  type="search"
+                  placeholder="Pesquisar"
+                  aria-label="Pesquisar"
+                />
+                <button
+                  class="btn btn-outline-success col-4 col-md-2 my-2 my-sm-0 text-white"
+                  type="submit"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+            <div class="mr-5">
               <button
-                class="btn btn-outline-success my-2 my-sm-0"
+                class="btn btn-outline-success mr-2 my-2 my-sm-0 text-white"
                 type="submit"
               >
-                <i class="fas fa-search"></i>
+                Cadastre-se
               </button>
-            </form>
+              <button
+                class="btn btn-outline-success mr-2 my-2 my-sm-0 text-white"
+                type="submit"
+              >
+                Login
+              </button>
+            </div>
           </div>
-          <div class="mr-5">
-            <button
-              class="btn btn-outline-success mr-2 my-2 my-sm-0"
-              type="submit"
-            >
-              Cadastre-se
-            </button>
-            <button
-              class="btn btn-outline-success mr-2 my-2 my-sm-0"
-              type="submit"
-            >
-              Login
-            </button>
-          </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
   </body>
 </html>

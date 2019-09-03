@@ -1,0 +1,14 @@
+.banner{
+    height: 250px;
+    background-image: url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  background-position: center; 
+  background-size: 1500px;
+}
+
+button.btn-outline-success {
+    background-color: #1abc9c;
+    border: none;
+}
+  
