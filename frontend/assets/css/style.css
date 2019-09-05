@@ -1,14 +1,106 @@
+body{
+  padding:0;
+  margin:0;
+  background-color: #ecf0f1;
+}
+
+header{
+  box-shadow: 0px 8px 10px -15px #111;
+}
+
+
+/* Banner em cima da nav */
 .banner{
     height: 250px;
     background-image: url('../img/banner.jpg');
-  background-repeat: no-repeat;
-  background-attachment: cover;
-  background-position: center; 
-  background-size: 1500px;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    background-position: center; 
+    background-size: 1500px;
 }
 
+/* Fim Banner em cima da nav */
+
+/* Botões navbar */
 button.btn-outline-success {
     background-color: #1abc9c;
     border: none;
 }
-  
+/*  Fim botões navbar */
+
+
+/* Paginate */
+.paginate{
+  margin: 0 auto;
+}
+
+.pagination-sm .page-item:first-child .page-link {
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+
+.pagination-sm .page-item:last-child .page-link {
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+    max-width: 100%;
+    width: 400px;
+    margin: 0 auto;
+}
+.page-item a{
+  border-radius: 5%;
+}
+
+.page-link{
+  border: #c9cccd 1px solid;
+  color: white;
+  background-color: #c9cccd;
+}
+
+.pagination-sm .page-link {
+  padding: 0 8px;
+}
+/* Fim Paginate */
+
+/* Post */
+
+.post{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 8px 10px -15px #111;
+}
+
+.profile-pic{
+  border-radius: 50%;
+  max-width: 50px;
+  height: 50px;
+}
+
+.post-title{
+  color: #363838;
+}
+.post-title:hover{
+  color:#989c9e;
+}
+.post-title h2{
+  font-size: 18px
+}
+.post-body p{
+  color:gray;
+}
+
+
+.comments{
+  border-left: solid 1px gray;
+  border-bottom: solid 1px gray;
+}
+.views{
+  border-left: solid 1px gray;
+  border-bottom: solid 1px gray;
+}
+.posted{
+    border-left: solid 1px gray;
+}
