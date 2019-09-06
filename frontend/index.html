@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
+<!-- Head - início -->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>No Dubts</title>
+  <title>No Doubt</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <!-- Default CSS -->
@@ -25,81 +25,155 @@
   <script defer src="assets/js/bootstrap.js"></script>
   <script defer src="assets/js/bootstrap.bundle.js"></script>
 </head>
-
-<body>
+<!-- Head - final -->
+<!-- Body - início -->
+<body class="container-fluid p-0 bg-light">
+  <!-- Banner - início -->
+  <!-- Obs.: creio que podemos melhorar esse banner (incluindo no header, por exemplo) -->
   <div class="banner"></div>
-
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Banner - final -->
+  <!-- Header - início -->
+  <header class="shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <a class="navbar-brand" href="#">
-        <img src="assets/img/logo.png" width="120" height="65" class="d-inline-block align-top" alt="No Dubts" />
+        <img src="assets/img/logo.png" width="120" height="65" class="d-inline-block align-top" alt="No Doubt" />
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuSuperior"
+        aria-controls="menuSuperior" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <div class="collapse navbar-collapse text-center" id="menuSuperior">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Perguntas</a>
+            <a class="nav-link" href="#">Perguntas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Tópicos</a>
+            <a class="nav-link" href="#">Tópicos</a>
           </li>
         </ul>
-        <div class="col-md-6 col-sm-12 mr-auto mt-lg-0 pl-0 pr-0">
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control col-8 col-md-10 search" type="search" placeholder="Pesquisar"
-              aria-label="Pesquisar" />
-            <button class="btn btn-outline-success col-4 col-md-2 my-2 my-sm-0 text-white" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
+        <nav class="navbar mx-auto d-inline-block">
+          <form class="form-inline">
+            <div class="form-group">
+              <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
+                aria-label="Pesquisar" />
+              <button class="btn btn-success border-0 my-2 my-sm-0 text-white" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
           </form>
-        </div>
-        <div class="mr-5">
-          <button class="btn btn-outline-success mr-2 my-2 my-sm-0 text-white" type="submit">
-            Cadastre-se
-          </button>
-          <button class="btn btn-outline-success mr-2 my-2 my-sm-0 text-white" type="submit">
-            Login
-          </button>
-        </div>
+        </nav>
+        <nav class="navbar ml-auto d-inline-block">
+          <form class="form-inline">
+            <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="button">Cadastre-se</button>
+            <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="button">Login</button>
+          </form>
+        </nav>
       </div>
     </nav>
   </header>
+  <!-- Header - final -->
+  <!-- Breadcrumb - início -->
+  <section class="px-3 py-2">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb bg-transparent">
+        <li class="breadcrumb-item"><a href="#" class="text-muted">Início</a></li>
+        <li class="breadcrumb-item"><a href="#" class="text-muted">Fórum</a></li>
+        <li class="breadcrumb-item active text-secondary" aria-current="page">Bacon Pancakes</li>
+      </ol>
+    </nav>
+  </section>
+  <!-- Breadcrumb - final -->
+  <!-- Content - início -->
   <div class="container">
     <div class="row">
-      <div class="paginate col-lg-12 col-md-8 col-sm-12 mt-4 text-center">
-        <nav>
-          <ul class="pagination pagination-sm">
-            <li class="page-item" aria-current="page"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#">6</a></li>
-            <li class="page-item"><a class="page-link" href="#">7</a></li>
-            <li class="page-item"><a class="page-link" href="#">8</a></li>
-            <li class="page-item"><a class="page-link" href="#">1556</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+      <!-- Main - início -->
+      <main class="col-12 col-md-8">
+        <!-- Paginação - início -->
+        <!-- Obs.: deverá ser substituído por paginação dinâmica -->
+        <section class="row">
+          <nav class="paginate col-lg-12 col-md-8 col-sm-12 mt-4 text-center">
+            <ul class="pagination pagination-sm">
+              <li class="page-item" aria-current="page"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link" href="#">6</a></li>
+              <li class="page-item"><a class="page-link" href="#">7</a></li>
+              <li class="page-item"><a class="page-link" href="#">8</a></li>
+              <li class="page-item"><a class="page-link" href="#">1556</a></li>
+            </ul>
+          </nav>
+        </section>
+        <!-- Paginação - final -->
+        <!-- Posts - início -->
+        <section class="row my-4">
+          <!-- Post User Online - início -->
+          <article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-2 my-4">
+            <aside class="m-3 col-2">
+              <div class="my-2 position-relative user-online">
+                <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
+              </div>
+              <hr class="col-auto">
+              <div class="d-flex flex-wrap justify-conent-space-between">
+                <i class="fas fa-circle m-3 position-relative text-info"><span class="position-absolute count-comment">5</span></i>
+                <i class="fab fa-font-awesome-flag text-success m-3"></i>
+                <i class="fas fa-medal m-3 text-primary"></i>
+                <i class="fas fa-tag ml-3 mt-3 text-danger"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+              </div>
+            </aside>
+            <section class="m-3">
+              <a href="#">
+                <h4 class="text-dark">Bacon pancakes</h4>
+              </a>
+              <p class="text-black-50">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+            </section>
+            <!-- <section class="d-block">
+              <hr class="col-12">
+              <article class="d-flex justify-conent-space-around">
+                <i class="far fa-thumbs-up text-success"></i>
+                <i class="far fa-thumbs-down text-danger"></i>
+                <i class="fas fa-reply text-muted"></i>
+              </article>
+            </section> -->
+          </article>
+          <!-- Post User Online - final -->
 
-    <div class="white-card col-12 my-4">
-      <div class="post row col-lg-8 col-sm-12">
-        <div class="col-lg-2 col-sm-4 user-left mt-2">
-          <img src="assets/img/profile.jpg" alt="" class="my-2 profile-pic">
-        </div>
-        <div class="post-body col-8 my-3">
-          <a href="#" class="post-title">
-            <h2>Bacon pancakes</h2>
-          </a>
-          <p>Bacon pancakes are really good</p>
-        </div>
-      </div>
+          <!-- Post User Offline - início -->
+          <article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-2 my-4">
+            <aside class="m-3 col-2">
+              <div class="my-2 position-relative user-offline">
+                <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
+              </div>
+              <hr class="col-auto">
+              <div class="d-flex flex-wrap justify-conent-space-between">
+                <i class="fas fa-circle m-3 position-relative text-info"><span class="position-absolute count-comment">5</span></i>
+                <i class="fab fa-font-awesome-flag text-success m-3"></i>
+                <i class="fas fa-medal m-3 text-primary"></i>
+                <i class="fas fa-tag ml-3 mt-3 text-danger"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+              </div>
+            </aside>
+            <section class="m-3">
+              <a href="#">
+                <h4 class="text-dark">Titela's feelings</h4>
+              </a>
+              <p class="text-black-50">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+            </section>
+          </article>
+          <!-- Post User Offline - final -->
+        </section>
+        <!-- Posts - final -->
+      </main>
+      <!-- Main - final -->
+      <!-- Aside - início -->
+      <aside class="col-12 col-md-4 pl-4 py-2">
+        <!-- Código -->
+        <p>ÁREA RESERVADA PARA O ASIDE</p>
+      </aside>
+      <!-- Aside - final -->
     </div>
   </div>
+  <!-- Content - final -->
 </body>
-
+<!-- Body - final -->
 </html>
