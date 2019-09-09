@@ -2,14 +2,53 @@
 <html lang="pt-BR">
 <!-- Head - início -->
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Metas Genéricos -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5, shrink-to-fit=no">
+  <meta http-equiv="Cache-control" content="public">
+  <meta name="revisit-after" content="30 days">
+  <meta name="identifier-URL" content="https://djament.com.br/nodoubt/index.php">
+  <meta name="abstract" content="NoDoubt | A node.js Case">
+  <meta name="author" content="Felipe Veronesi, Marcelo Diament e Victor Torres">
+  <meta name="robots" content="index,follow">
+  <meta name="contact" content="contato@djament.com.br">
+  <meta name="reply-to" content="contato@djament.com.br">
+  <meta name="copyright" content="NoDoubt | Felipe Veronesi, Marcelo Diament e Victor Torres">
+  <meta name="rating" content="general">
+  <meta name="web_author" content="No Doubt | Felipe Veronesi, Marcelo Diament e Victor Torres">
+  <meta name="theme-color" content="#000000">
+  <!-- OpenGraph e Metas da página -->
   <title>No Doubt</title>
+  <meta name="title" content="NoDoubt">
+  <meta property="og:site_name" content="NoDoubt | A node.js case">
+  <meta property="og:locale" content="pt-BR">
+  <meta name="og:locality" content="São Paulo">
+  <meta name="og:region" content="SP">
+  <meta name="og:country-name" content="BR">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/logo.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="NoDoubt | A node.js case">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="shortcut icon" sizes="99x65" href="assets/img/logo.png">
+  <link rel="icon" type="image/png" sizes="99x65" href="assets/img/logo.png">  
+  <link rel="canonical" href="https://djament.com.br/nodoubt">
+  <meta name="description" content="Um case de node.js construído por Felipe Veronsei, Marcelo Diament e Victor Torres">
+  <meta property="og:title" content="NoDoubt">
+  <meta property="og:description" content="Um case de node.js construído por Felipe Veronsei, Marcelo Diament e Victor Torres">
+  <meta property="og:url" content="https://djament.com.br/nodoubt/index.php">
+  <meta property="og:image:alt" content="NoDoubt | A node.js case">
+  <meta property="og:image:url" content="assets/img/logo.png">
+  <meta property="og:image:type" content="img/png">
+  <meta name="keywords" content="node.js, node, js, js framework, backend, frontend, fullstack, programação, web, desenvolvimento, web develop">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <!-- Default CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+  <!-- Default Minified CSS -->
+  <link rel="stylesheet" href="assets/css/style.min.css" />
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/fce8f2d243.js"></script>
   <!-- Bootstrap JS -->
@@ -24,39 +63,40 @@
   </script>
   <script defer src="assets/js/bootstrap.js"></script>
   <script defer src="assets/js/bootstrap.bundle.js"></script>
+  <script defer src="assets/js/main.js"></script>
 </head>
 <!-- Head - final -->
 <!-- Body - início -->
 <body class="container-fluid p-0 bg-light">
   <!-- Banner - início -->
-  <!-- Obs.: creio que podemos melhorar esse banner (incluindo no header, por exemplo) -->
-  <div class="banner"></div>
+  <!-- Obs.: creio que possamos melhorar esse banner (incluindo no header, por exemplo) -->
+  <div class="banner" style="height:250px;"></div>
   <!-- Banner - final -->
   <!-- Header - início -->
-  <header class="shadow-sm">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <a class="navbar-brand" href="#">
-        <img src="assets/img/logo.png" width="120" height="65" class="d-inline-block align-top" alt="No Doubt" />
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" id="menuTopo">
+      <a class="navbar-brand" href="#" title="Início" target="_self" rel="next">
+        <img src="assets/img/logo.png" width="auto" height="65" class="d-inline-block align-top" alt="No Doubt" id="logoTopo"/>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuSuperior"
-        aria-controls="menuSuperior" aria-expanded="false" aria-label="Alterna navegação">
+        aria-controls="menuSuperior" aria-expanded="false" aria-label="Alterna navegação" title="Exibir Menu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-center" id="menuSuperior">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Perguntas</a>
+            <a class="nav-link text-black-50" href="#" title="Perguntas" target="_self" rel="next">Perguntas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tópicos</a>
+            <a class="nav-link text-black-50" href="#" title="Tópicos" target="_self" rel="next">Tópicos</a>
           </li>
         </ul>
         <nav class="navbar mx-auto d-inline-block">
           <form class="form-inline">
-            <div class="form-group">
-              <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
-                aria-label="Pesquisar" />
-              <button class="btn btn-success border-0 my-2 my-sm-0 text-white" type="submit">
+            <div class="form-group d-flex flex-row flex-nowrap align-items-center">
+              <input class="form-control" type="search" placeholder="Pesquisar"
+                aria-label="Pesquisar" name="pesquisaInput" id="pesquisaInput"/>
+              <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="submit" aria-label="pesquisar" id="pesquisar">
                 <i class="fas fa-search"></i>
               </button>
             </div>
@@ -64,8 +104,8 @@
         </nav>
         <nav class="navbar ml-auto d-inline-block">
           <form class="form-inline">
-            <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="button">Cadastre-se</button>
-            <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="button">Login</button>
+            <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="button" aria-label="cadastro">Cadastre-se</button>
+            <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="button" aria-label="login">Login</button>
           </form>
         </nav>
       </div>
@@ -76,104 +116,512 @@
   <section class="px-3 py-2">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb bg-transparent">
-        <li class="breadcrumb-item"><a href="#" class="text-muted">Início</a></li>
-        <li class="breadcrumb-item"><a href="#" class="text-muted">Fórum</a></li>
-        <li class="breadcrumb-item active text-secondary" aria-current="page">Bacon Pancakes</li>
+        <li class="breadcrumb-item"><a href="#" class="text-muted" target="_self" rel="next" title="Início">Início</a></li>
+        <li class="breadcrumb-item active text-secondary" aria-current="page">Fórum</li>
+        <!-- <li class="breadcrumb-item active text-secondary" aria-current="page">Titela's Feelings</li> -->
       </ol>
     </nav>
   </section>
   <!-- Breadcrumb - final -->
+  <!-- Paginação - início -->
+  <div class="container">
+    <article class="row">
+      <nav aria-label="Tópicos" class="paginate col-12 col-md-8">
+        <ul class="pagination justify-content-between">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" rel="next" target="_self" title="Acessar primeira página"><i class="fas fa-chevron-left"></i></a>
+          </li>
+          <li class="page-item active" aria-current="page"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 1">1 <span class="sr-only">(current)</span></a></li>
+          <li class="page-item"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 2">2</a></li>
+          <li class="page-item "><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 3">3</a></li>
+          <!-- Observação: ao implementar a paginação dinâmica, o limit deverá ser limitado de acordo com o media query -->
+          <li class="page-item d-none d-md-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 4">4</a></li>
+          <li class="page-item d-none d-md-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 5">5</a></li>
+          <li class="page-item d-none d-lg-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 6">6</a></li>
+          <li class="page-item d-none d-lg-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 7">7</a></li>
+          <li class="page-item"><a class="page-link disabled" href="#" title="Navegue para ver mais páginas">...</a></li>
+          <li class="page-item d-none d-lg-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 144">144</a></li>
+          <li class="page-item d-none d-md-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 233">233</a></li>
+          <li class="page-item d-none d-sm-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 377">377</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" rel="next" target="_self" title="Acessar última página"><i class="fas fa-chevron-right"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </article>
+  </div>
+  <!-- Paginação - final -->
   <!-- Content - início -->
   <div class="container">
     <div class="row">
       <!-- Main - início -->
       <main class="col-12 col-md-8">
-        <!-- Paginação - início -->
-        <!-- Obs.: deverá ser substituído por paginação dinâmica -->
-        <section class="row">
-          <nav class="paginate col-lg-12 col-md-8 col-sm-12 mt-4 text-center">
-            <ul class="pagination pagination-sm">
-              <li class="page-item" aria-current="page"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item"><a class="page-link" href="#">6</a></li>
-              <li class="page-item"><a class="page-link" href="#">7</a></li>
-              <li class="page-item"><a class="page-link" href="#">8</a></li>
-              <li class="page-item"><a class="page-link" href="#">1556</a></li>
-            </ul>
-          </nav>
-        </section>
-        <!-- Paginação - final -->
         <!-- Posts - início -->
         <section class="row my-4">
-          <!-- Post User Online - início -->
-          <article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-2 my-4">
-            <aside class="m-3 col-2">
-              <div class="my-2 position-relative user-online">
-                <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
-              </div>
-              <hr class="col-auto">
-              <div class="d-flex flex-wrap justify-conent-space-between">
-                <i class="fas fa-circle m-3 position-relative text-info"><span class="position-absolute count-comment">5</span></i>
-                <i class="fab fa-font-awesome-flag text-success m-3"></i>
-                <i class="fas fa-medal m-3 text-primary"></i>
-                <i class="fas fa-tag ml-3 mt-3 text-danger"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
-              </div>
-            </aside>
-            <section class="m-3">
-              <a href="#">
-                <h4 class="text-dark">Bacon pancakes</h4>
-              </a>
-              <p class="text-black-50">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
-            </section>
-            <!-- <section class="d-block">
-              <hr class="col-12">
-              <article class="d-flex justify-conent-space-around">
-                <i class="far fa-thumbs-up text-success"></i>
-                <i class="far fa-thumbs-down text-danger"></i>
-                <i class="fas fa-reply text-muted"></i>
-              </article>
-            </section> -->
-          </article>
-          <!-- Post User Online - final -->
 
-          <!-- Post User Offline - início -->
-          <article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-2 my-4">
-            <aside class="m-3 col-2">
-              <div class="my-2 position-relative user-offline">
-                <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
-              </div>
-              <hr class="col-auto">
-              <div class="d-flex flex-wrap justify-conent-space-between">
-                <i class="fas fa-circle m-3 position-relative text-info"><span class="position-absolute count-comment">5</span></i>
-                <i class="fab fa-font-awesome-flag text-success m-3"></i>
-                <i class="fas fa-medal m-3 text-primary"></i>
-                <i class="fas fa-tag ml-3 mt-3 text-danger"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
-              </div>
+          <!-- Post User Online - início -->
+          <div class="post shadow-sm bg-white rounded-sm p-3 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
+              <aside class="col-3">
+                <div class="my-2 position-relative user-online text-center">
+                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
+                  <small>Samuel Pink Jackson</small>
+                </div>
+                <hr class="col-auto">
+                <div class="d-flex flex-wrap">
+                  <i class="align-self-center mx-2"><span class="badge badge-info badge-pill">112</span></i>
+                  <i class="fab fa-font-awesome-flag text-success  ml-3 mr-auto"></i>
+                  <i class="fas fa-medal m-3 text-primary"></i>
+                  <i class="fas fa-tag ml-3 mt-3 text-danger"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+                </div>
+              </aside>
+              <section class="col-8">
+                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
+                  <h4 class="text-dark">Titela's Feelings</h4>
+                </a>
+                <p class="text-black-50">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+              </section>
+              <section class="col-12 d-block">
+                <hr>
+                <!-- <article class="row d-flex justify-conent-space-around"> -->
+                  <i class="far fa-thumbs-up text-success d-inline mr-3 curtir"></i> <!-- Trocar classe text-secondary por text-success quando selecionado -->
+                  <i class="far fa-thumbs-down text-secondary d-inline mr-3 descurtir"></i> <!-- Trocar classe text-secondary por text-danger quando selecionado -->
+                  <i class="fas fa-reply text-muted d-inline mr-3"></i>
+                <!-- </article> -->
+              </section>
+            </article>
+            <aside class="col-12 col-md-2 border-left px-0 py-4">
+              <ul class="list-group d-flex flex-row d-md-block">
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">165</span><span class="text-black-50 d-block">&#9660;</span></li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 6.546</li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 23 min</li>
+              </ul>
             </aside>
-            <section class="m-3">
-              <a href="#">
-                <h4 class="text-dark">Titela's feelings</h4>
-              </a>
-              <p class="text-black-50">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
-            </section>
-          </article>
+          </div>
+          <!-- Post User Online - final -->
+          <!-- Post User Offline - início -->
+          <div class="post shadow-sm bg-white rounded-sm p-3 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
+              <aside class="col-3">
+                <div class="my-2 position-relative user-offline text-center">
+                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
+                  <small>Samuel Pink Jackson</small>
+                </div>
+                <hr class="col-auto">
+                <div class="d-flex flex-wrap">
+                  <i class="align-self-center mx-2"><span class="badge badge-info badge-pill">112</span></i>
+                  <i class="fab fa-font-awesome-flag text-success  ml-3 mr-auto"></i>
+                  <i class="fas fa-medal m-3 text-primary"></i>
+                  <i class="fas fa-tag ml-3 mt-3 text-danger"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+                </div>
+              </aside>
+              <section class="col-8">
+                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
+                  <h4 class="text-dark">Titela's Feelings</h4>
+                </a>
+                <p class="text-black-50">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+              </section>
+              <section class="col-12 d-block">
+                <hr>
+                <!-- <article class="row d-flex justify-conent-space-around"> -->
+                  <i class="far fa-thumbs-up text-success d-inline mr-3 curtir"></i> <!-- Trocar classe text-secondary por text-success quando selecionado -->
+                  <i class="far fa-thumbs-down text-secondary d-inline mr-3 descurtir"></i> <!-- Trocar classe text-secondary por text-danger quando selecionado -->
+                  <i class="fas fa-reply text-muted d-inline mr-3"></i>
+                <!-- </article> -->
+              </section>
+            </article>
+            <aside class="col-12 col-md-2 border-left px-0 py-4">
+              <ul class="list-group d-flex flex-row d-md-block">
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">165</span><span class="text-black-50 d-block">&#9660;</span></li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 6.546</li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 23 min</li>
+              </ul>
+            </aside>
+          </div>
           <!-- Post User Offline - final -->
+          <!-- Post User Online - início -->
+          <div class="post shadow-sm bg-white rounded-sm p-3 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
+              <aside class="col-3">
+                <div class="my-2 position-relative user-online text-center">
+                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
+                  <small>Samuel Pink Jackson</small>
+                </div>
+                <hr class="col-auto">
+                <div class="d-flex flex-wrap">
+                  <i class="align-self-center mx-2"><span class="badge badge-info badge-pill">112</span></i>
+                  <i class="fab fa-font-awesome-flag text-success  ml-3 mr-auto"></i>
+                  <i class="fas fa-medal m-3 text-primary"></i>
+                  <i class="fas fa-tag ml-3 mt-3 text-danger"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+                </div>
+              </aside>
+              <section class="col-8">
+                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
+                  <h4 class="text-dark">Titela's Feelings</h4>
+                </a>
+                <p class="text-black-50">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+              </section>
+              <section class="col-12 d-block">
+                <hr>
+                <!-- <article class="row d-flex justify-conent-space-around"> -->
+                  <i class="far fa-thumbs-up text-success d-inline mr-3 curtir"></i> <!-- Trocar classe text-secondary por text-success quando selecionado -->
+                  <i class="far fa-thumbs-down text-secondary d-inline mr-3 descurtir"></i> <!-- Trocar classe text-secondary por text-danger quando selecionado -->
+                  <i class="fas fa-reply text-muted d-inline mr-3"></i>
+                <!-- </article> -->
+              </section>
+            </article>
+            <aside class="col-12 col-md-2 border-left px-0 py-4">
+              <ul class="list-group d-flex flex-row d-md-block">
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">165</span><span class="text-black-50 d-block">&#9660;</span></li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 6.546</li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 23 min</li>
+              </ul>
+            </aside>
+          </div>
+          <!-- Post User Online - final -->
+          <!-- Post User Offline - início -->
+          <div class="post shadow-sm bg-white rounded-sm p-3 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
+              <aside class="col-3">
+                <div class="my-2 position-relative user-offline text-center">
+                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
+                  <small>Samuel Pink Jackson</small>
+                </div>
+                <hr class="col-auto">
+                <div class="d-flex flex-wrap">
+                  <i class="align-self-center mx-2"><span class="badge badge-info badge-pill">112</span></i>
+                  <i class="fab fa-font-awesome-flag text-success  ml-3 mr-auto"></i>
+                  <i class="fas fa-medal m-3 text-primary"></i>
+                  <i class="fas fa-tag ml-3 mt-3 text-danger"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+                </div>
+              </aside>
+              <section class="col-8">
+                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
+                  <h4 class="text-dark">Titela's Feelings</h4>
+                </a>
+                <p class="text-black-50">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+              </section>
+              <section class="col-12 d-block">
+                <hr>
+                <!-- <article class="row d-flex justify-conent-space-around"> -->
+                  <i class="far fa-thumbs-up text-success d-inline mr-3 curtir"></i> <!-- Trocar classe text-secondary por text-success quando selecionado -->
+                  <i class="far fa-thumbs-down text-secondary d-inline mr-3 descurtir"></i> <!-- Trocar classe text-secondary por text-danger quando selecionado -->
+                  <i class="fas fa-reply text-muted d-inline mr-3"></i>
+                <!-- </article> -->
+              </section>
+            </article>
+            <aside class="col-12 col-md-2 border-left px-0 py-4">
+              <ul class="list-group d-flex flex-row d-md-block">
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">165</span><span class="text-black-50 d-block">&#9660;</span></li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 6.546</li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 23 min</li>
+              </ul>
+            </aside>
+          </div>
+          <!-- Post User Offline - final -->
+          <!-- Post User Online - início -->
+          <div class="post shadow-sm bg-white rounded-sm p-3 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
+              <aside class="col-3">
+                <div class="my-2 position-relative user-online text-center">
+                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
+                  <small>Samuel Pink Jackson</small>
+                </div>
+                <hr class="col-auto">
+                <div class="d-flex flex-wrap">
+                  <i class="align-self-center mx-2"><span class="badge badge-info badge-pill">112</span></i>
+                  <i class="fab fa-font-awesome-flag text-success  ml-3 mr-auto"></i>
+                  <i class="fas fa-medal m-3 text-primary"></i>
+                  <i class="fas fa-tag ml-3 mt-3 text-danger"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+                </div>
+              </aside>
+              <section class="col-8">
+                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
+                  <h4 class="text-dark">Titela's Feelings</h4>
+                </a>
+                <p class="text-black-50">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+              </section>
+              <section class="col-12 d-block">
+                <hr>
+                <!-- <article class="row d-flex justify-conent-space-around"> -->
+                  <i class="far fa-thumbs-up text-success d-inline mr-3 curtir"></i> <!-- Trocar classe text-secondary por text-success quando selecionado -->
+                  <i class="far fa-thumbs-down text-secondary d-inline mr-3 descurtir"></i> <!-- Trocar classe text-secondary por text-danger quando selecionado -->
+                  <i class="fas fa-reply text-muted d-inline mr-3"></i>
+                <!-- </article> -->
+              </section>
+            </article>
+            <aside class="col-12 col-md-2 border-left px-0 py-4">
+              <ul class="list-group d-flex flex-row d-md-block">
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">165</span><span class="text-black-50 d-block">&#9660;</span></li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 6.546</li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 23 min</li>
+              </ul>
+            </aside>
+          </div>
+          <!-- Post User Online - final -->
+          <!-- Post User Offline - início -->
+          <div class="post shadow-sm bg-white rounded-sm p-3 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
+              <aside class="col-3">
+                <div class="my-2 position-relative user-offline text-center">
+                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
+                  <small>Samuel Pink Jackson</small>
+                </div>
+                <hr class="col-auto">
+                <div class="d-flex flex-wrap">
+                  <i class="align-self-center mx-2"><span class="badge badge-info badge-pill">112</span></i>
+                  <i class="fab fa-font-awesome-flag text-success  ml-3 mr-auto"></i>
+                  <i class="fas fa-medal m-3 text-primary"></i>
+                  <i class="fas fa-tag ml-3 mt-3 text-danger"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+                </div>
+              </aside>
+              <section class="col-8">
+                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
+                  <h4 class="text-dark">Titela's Feelings</h4>
+                </a>
+                <p class="text-black-50">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+              </section>
+              <section class="col-12 d-block">
+                <hr>
+                <!-- <article class="row d-flex justify-conent-space-around"> -->
+                  <i class="far fa-thumbs-up text-success d-inline mr-3 curtir"></i> <!-- Trocar classe text-secondary por text-success quando selecionado -->
+                  <i class="far fa-thumbs-down text-secondary d-inline mr-3 descurtir"></i> <!-- Trocar classe text-secondary por text-danger quando selecionado -->
+                  <i class="fas fa-reply text-muted d-inline mr-3"></i>
+                <!-- </article> -->
+              </section>
+            </article>
+            <aside class="col-12 col-md-2 border-left px-0 py-4">
+              <ul class="list-group d-flex flex-row d-md-block">
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">165</span><span class="text-black-50 d-block">&#9660;</span></li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 6.546</li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 23 min</li>
+              </ul>
+            </aside>
+          </div>
+          <!-- Post User Offline - final -->
+          <!-- Post User Online - início -->
+          <div class="post shadow-sm bg-white rounded-sm p-3 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
+              <aside class="col-3">
+                <div class="my-2 position-relative user-online text-center">
+                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
+                  <small>Samuel Pink Jackson</small>
+                </div>
+                <hr class="col-auto">
+                <div class="d-flex flex-wrap">
+                  <i class="align-self-center mx-2"><span class="badge badge-info badge-pill">112</span></i>
+                  <i class="fab fa-font-awesome-flag text-success  ml-3 mr-auto"></i>
+                  <i class="fas fa-medal m-3 text-primary"></i>
+                  <i class="fas fa-tag ml-3 mt-3 text-danger"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+                </div>
+              </aside>
+              <section class="col-8">
+                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
+                  <h4 class="text-dark">Titela's Feelings</h4>
+                </a>
+                <p class="text-black-50">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+              </section>
+              <section class="col-12 d-block">
+                <hr>
+                <!-- <article class="row d-flex justify-conent-space-around"> -->
+                  <i class="far fa-thumbs-up text-success d-inline mr-3 curtir"></i> <!-- Trocar classe text-secondary por text-success quando selecionado -->
+                  <i class="far fa-thumbs-down text-secondary d-inline mr-3 descurtir"></i> <!-- Trocar classe text-secondary por text-danger quando selecionado -->
+                  <i class="fas fa-reply text-muted d-inline mr-3"></i>
+                <!-- </article> -->
+              </section>
+            </article>
+            <aside class="col-12 col-md-2 border-left px-0 py-4">
+              <ul class="list-group d-flex flex-row d-md-block">
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">165</span><span class="text-black-50 d-block">&#9660;</span></li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 6.546</li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 23 min</li>
+              </ul>
+            </aside>
+          </div>
+          <!-- Post User Online - final -->
+          <!-- Post User Offline - início -->
+          <div class="post shadow-sm bg-white rounded-sm p-3 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
+              <aside class="col-3">
+                <div class="my-2 position-relative user-offline text-center">
+                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
+                  <small>Samuel Pink Jackson</small>
+                </div>
+                <hr class="col-auto">
+                <div class="d-flex flex-wrap">
+                  <i class="align-self-center mx-2"><span class="badge badge-info badge-pill">112</span></i>
+                  <i class="fab fa-font-awesome-flag text-success  ml-3 mr-auto"></i>
+                  <i class="fas fa-medal m-3 text-primary"></i>
+                  <i class="fas fa-tag ml-3 mt-3 text-danger"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+                </div>
+              </aside>
+              <section class="col-8">
+                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
+                  <h4 class="text-dark">Titela's Feelings</h4>
+                </a>
+                <p class="text-black-50">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+              </section>
+              <section class="col-12 d-block">
+                <hr>
+                <!-- <article class="row d-flex justify-conent-space-around"> -->
+                  <i class="far fa-thumbs-up text-success d-inline mr-3 curtir"></i> <!-- Trocar classe text-secondary por text-success quando selecionado -->
+                  <i class="far fa-thumbs-down text-secondary d-inline mr-3 descurtir"></i> <!-- Trocar classe text-secondary por text-danger quando selecionado -->
+                  <i class="fas fa-reply text-muted d-inline mr-3"></i>
+                <!-- </article> -->
+              </section>
+            </article>
+            <aside class="col-12 col-md-2 border-left px-0 py-4">
+              <ul class="list-group d-flex flex-row d-md-block">
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">165</span><span class="text-black-50 d-block">&#9660;</span></li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 6.546</li>
+                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 23 min</li>
+              </ul>
+            </aside>
+          </div>
+          <!-- Post User Offline - final -->
+
         </section>
         <!-- Posts - final -->
       </main>
       <!-- Main - final -->
+
+
       <!-- Aside - início -->
-      <aside class="col-12 col-md-4 pl-4 py-2">
-        <!-- Código -->
-        <p>ÁREA RESERVADA PARA O ASIDE</p>
+      <aside class="col-12 col-md-4 pl-4 my-4">
+        <!-- Aside Nav > Categorias - início -->
+          <article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-3 my-4 sticky-top" id="asideTopoCat">
+            <section class="col-12">
+              <a href="#" target="_self" rel="next" title="Acesse todas as categorias">
+                <h4 class="text-dark">Categorias</h4>
+              </a>
+              <hr class="col-auto">
+              <ul class="list-group text-black-50">
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a href="#" class="text-black-50" target="_self" rel="next" title="Saiba mais sobre Mercado de Programação">Mercado de Programação</a><span class="badge badge-secondary badge-pill">34</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a href="#" class="text-black-50" target="_self" rel="next" title="Saiba mais sobre Conceitos e Paradigmas">Conceitos e Paradigmas</a><span class="badge badge-secondary badge-pill">21</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a href="#" class="text-black-50" target="_self" rel="next" title="Saiba mais sobre Metodologias">Metodologias</a><span class="badge badge-secondary badge-pill">13</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a href="#" class="text-black-50" target="_self" rel="next" title="Saiba mais sobre Sintaxe, Variáveis e Funções">Sintaxe, Variáveis e Funções</a><span class="badge badge-secondary badge-pill">8</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a href="#" class="text-black-50" target="_self" rel="next" title="Saiba mais sobre Front End">Front End</a><span class="badge badge-secondary badge-pill">5</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a href="#" class="text-black-50" target="_self" rel="next" title="Saiba mais sobre Back End">Back End</a><span class="badge badge-secondary badge-pill">3</span></li>
+              </ul>
+            </section>
+          </article>
+          <!-- Aside Nav > Categorias - final -->
+          <!-- Aside Nav > Enquete da Semana - início -->
+          <article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-3 my-4 sticky-top" id="asideTopoEnq">
+            <section class="col-12">
+              <a href="#" target="_self" rel="next" title="Acesse todas as enquetes">
+                <h4 class="text-dark">Enquete da Semana</h4>
+              </a>
+              <hr class="col-auto">
+              <p>Qual tema está estudando essa semana?</p>
+              <!-- Progress Bar #01 -->
+              <div class="row d-flex flex-row flex-nowrap mb-3">
+                <div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 48%;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">POO</div>
+                </div>
+                <button class="btn btn-secondary col-2 py-0" aria-label="selecionar">&#10003;</button>
+              </div>
+              <!-- Progress Bar #02 -->
+              <div class="row d-flex flex-row flex-nowrap mb-3">
+                <div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 21%;" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100">POO</div>
+                </div>
+                <button class="btn btn-success col-2 py-0" aria-label="selecionar">&#10003;</button>
+              </div>
+              <!-- Progress Bar #03 -->
+              <div class="row d-flex flex-row flex-nowrap mb-3">
+                <div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 16%;" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100">PDO</div>
+                </div>
+                <button class="btn btn-secondary col-2 py-0" aria-label="selecionar">&#10003;</button>
+              </div>
+              <!-- Progress Bar #04 -->
+              <div class="row d-flex flex-row flex-nowrap mb-3">
+                <div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 8%;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100">POO</div>
+                </div>
+                <button class="btn btn-secondary col-2 py-0" aria-label="selecionar">&#10003;</button>
+              </div>
+              <!-- Progress Bar #05 -->
+              <div class="row d-flex flex-row flex-nowrap mb-3">
+                <div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 7%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100">POO</div>
+                </div>
+                <button class="btn btn-secondary col-2 py-0" aria-label="selecionar">&#10003;</button>
+              </div>
+            </section>
+          </article>
+          <!-- Aside Nav > Enquete da Semana - final -->
+
+          <!-- Aside Nav > Minhas Threads - início -->
+          <article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-3 my-4 sticky-top" id="asideTopoThreads">
+            <section class="col-12">
+              <a href="#" target="_self" rel="next" title="Acesse todas as perguntas">
+                <h4 class="text-dark">Minhas Perguntas</h4>
+              </a>
+              <hr class="col-auto">
+              <ul class="list-group text-black-50">
+                <li class="list-group-item border-left-0 border-right-0 border-top-0 px-0"><a href="#" class="text-black-50" rel="next" target="_self" title="Como configurar meu localhost?">Como configurar meu localhost?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 px-0"><a href="#" class="text-black-50" rel="next" target="_self" title="Como capturar dados de uma API?">Como capturar dados de uma API?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 px-0"><a href="#" class="text-black-50" rel="next" target="_self" title="Como registrar dados em um banco?">Como registrar dados em um banco?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 px-0"><a href="#" class="text-black-50" rel="next" target="_self" title="Como transformar JSON em um Objeto?">Como transformar JSON em um Objeto?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 px-0"><a href="#" class="text-black-50" rel="next" target="_self" title="Como transformar JSON em um Array?">Como transformar JSON em um Array?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 px-0"><a href="#" class="text-black-50" rel="next" target="_self" title="Como salvar um novo usuário cadastrado?">Como salvar um novo usuário cadastrado?</a></li>
+              </ul>
+            </section>
+          </article>
+          <!-- Aside Nav > Minhas Threads - final -->
       </aside>
       <!-- Aside - final -->
+
+
     </div>
   </div>
   <!-- Content - final -->
+  <!-- Paginação - início -->
+  <div class="container">
+    <article class="row">
+      <nav aria-label="Tópicos" class="paginate col-12 col-md-8">
+        <ul class="pagination justify-content-between">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" rel="next" target="_self" title="Acessar primeira página"><i class="fas fa-chevron-left"></i></a>
+          </li>
+          <li class="page-item active" aria-current="page"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 1">1 <span class="sr-only">(current)</span></a></li>
+          <li class="page-item"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 2">2</a></li>
+          <li class="page-item "><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 3">3</a></li>
+          <!-- Observação: ao implementar a paginação dinâmica, o limit deverá ser limitado de acordo com o media query -->
+          <li class="page-item d-none d-md-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 4">4</a></li>
+          <li class="page-item d-none d-md-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 5">5</a></li>
+          <li class="page-item d-none d-lg-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 6">6</a></li>
+          <li class="page-item d-none d-lg-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 7">7</a></li>
+          <li class="page-item"><a class="page-link disabled" href="#" title="Navegue para ver mais páginas">...</a></li>
+          <li class="page-item d-none d-lg-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 144">144</a></li>
+          <li class="page-item d-none d-md-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 233">233</a></li>
+          <li class="page-item d-none d-sm-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 377">377</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" rel="next" target="_self" title="Acessar última página"><i class="fas fa-chevron-right"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </article>
+  </div>
+  <!-- Paginação - final -->
+  <!-- Footer - início -->
+  <footer class="container-fluid bg-white">
+    <section class="row">
+      <a class="navbar-brand col-2 my-2" href="#">
+        <img src="assets/img/logo.png" width="auto" height="50" class="d-inline-block align-top" alt="No Doubt" id="logoRodape"/>
+      </a>
+      <small class="text-center col-8 my-4">Copyright &lt; <b><a href="#" title="Início" rel="next" target="_self">NoDoubt</a></b> /&gt; &copy;</small>
+      <nav class="col-auto ml-auto my-4">
+        <a href="#" title="Acesse nossa página no facebook" rel="nofollower" target="_blank"><i class="fab fa-facebook text-black-50 ml-2"></i></a>
+        <a href="#" title="Acesse nossa página no instagram" rel="nofollower" target="_blank"><i class="fab fa-instagram text-black-50 ml-2"></i></a>
+        <a href="#" title="Acesse nossa página no whatsapp" rel="nofollower" target="_blank"><i class="fab fa-whatsapp text-black-50 ml-2"></i></a>
+        <a href="#" title="Acesse nossa página no linkedin" rel="nofollower" target="_blank"><i class="fab fa-linkedin text-black-50 ml-2"></i></a>
+      </nav>
+    </section>
+  </footer>
+  <!-- Footer - final -->
 </body>
 <!-- Body - final -->
 </html>

@@ -1,108 +1,49 @@
-/* Resets - início */
-  *, html{
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-  .active a {
-    color: #1abc9c;
-  }
-/* Resets - final */
-
-/* Banner topo - início */
-  .banner{
-      height: 250px;
-      background-image: url('../img/banner.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center; 
-      background-size: cover;
-  }
-/* Banner topo - final */
-
-/* Breadcrumb - início */
-  .breadcrumb-item+.breadcrumb-item::before {
-    content: '>';
-  }
-/* Breadcrumb - final */
-
-
-/* Estilo btn-success - início */
-  .btn-success {
-      background-color: #1abc9c;
-  }
-/* Estilo btn-success - final */
-
-
-/* Paginate */
-.paginate{
-  margin: 0 auto;
+*, html{ /* Resets */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
-.pagination-sm .page-item:first-child .page-link {
-  border-top-left-radius: 5%;
-  border-bottom-left-radius: 5%;
+a {
+  color: inherit;
 }
-
-.pagination-sm .page-item:last-child .page-link {
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
+a:hover {
+  color: #1abc9c !important;
 }
-.pagination {
-  display: flex;
-  justify-content: space-between;
-    max-width: 100%;
-    width: 400px;
-    margin: 0 auto;
+.banner{ /* Banner topo */
+  height: 250px;
+  background-image: url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
 }
-.page-item a{
-  border-radius: 5%;
+.breadcrumb-item+.breadcrumb-item::before { /* Breadcrumb */
+  content: '>';
 }
-
-.page-link{
-  border: #c9cccd 1px solid;
-  color: white;
-  background-color: #c9cccd;
+.btn-success { /* Estilo btn-success */
+    background-color: #1abc9c;
 }
-
-.pagination-sm .page-link {
-  padding: 0 8px;
+.user-online::after, .user-offline::after { /* User status */
+  top: -10%;
+  right: 20%;
+  position: absolute;
+  content:  '\002B24';
 }
-/* Fim Paginate */
-
-/* Post - início */
-  /* Pseudo-elemento 'bolinha' Online/Offline - início */
-    .user-online::after,
-    .user-offline::after {
-      top: -10%;
-      right: 20%;
-      position: absolute;
-      content:  '\002B24';
-    }
-    .user-online::after {
-      color: #22ff22;
-    }
-    .user-offline::after {
-      color: #ff2222;
-    }
-  /* Pseudo-elemento 'bolinha' Online/Offline - início */
-  /* Contador de Comentários - início */
-    .count-comment {
-      bottom: 10%;
-      right: 25%;
-      position: absolute;
-      color: white;
-      font-weight: lighter;
-      font-size: 0.75rem;
-      line-height: 12px;
-    }
-  /* Contador de Comentários - final */
-  .comments, .views {
-    /*border-left: solid 1px gray;
-    border-bottom: solid 1px gray;*/
-    /* Inserir border-bottom border-left como classes na tag */
-  }
-  .posted{
-      /*border-left: solid 1px gray;*/
-      /*Inserir border-left como classe na tag*/
-  }
-/* Post - final */
+.user-online::after { /* User online */
+  color: #22ff22;
+}
+.user-offline::after { /* User offline */
+  color: #ff2222;
+}
+i.fa, i.far, i.fas, i.fab { /* Quando incluirmos os links poderemos remover essa parte*/
+  cursor: pointer;
+}
+#asideTopoCat, #asideTopoEnq { /* Deixando o menu aside sempre à vista (inclusive o título de cada 'widget') */
+  top: 90px;
+}
+#asideTopoEnq {
+  top: 160px;
+}
+#asideTopoThreads {
+  top: 230px;
+}
+/* Obs.: incluir regra com js de acrescentar mais 70 px à propriedade top de acordo com o número de 'widgets' no aside */
