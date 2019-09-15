@@ -40,6 +40,9 @@ a:hover {
 i.fa, i.far, i.fas, i.fab { /* Quando incluirmos os links poderemos remover essa parte*/
   cursor: pointer;
 }
+#novaCategoriaCard { /* Deixando o card de Nova Categoria */
+  top: 65px;
+}
 #asideTopoTopPerguntas { /* Deixando o menu aside sempre à vista (inclusive o título de cada 'widget') */
   top: 90px;
 }
