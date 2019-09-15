@@ -19,6 +19,9 @@ a:hover {
 .bannerTitela{ /* Banner topo - topico Titela */
   background-image: url('../img/banner-titela.jpg');
 }
+.bannerSubTitela{ /* Banner topo - topico Subtitela */
+  background-image: url('../img/banner-subtitela.jpg');
+}
 .breadcrumb-item+.breadcrumb-item::before { /* Breadcrumb */
   content: '>';
 }
