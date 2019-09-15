@@ -1,0 +1,46 @@
+{
+    "categorias": [{
+    	"id": 0,
+		"titulo": "Titela",
+		"descricao": "Titela é a parte mais carnuda do peito de uma ave. Também é utilizado para se referir à parte mais suculenta de um prato. Mas, segundo o prof. Veronesi, title seria na verdade pasteizinhos de vento... Será?",
+		"img": "assets/img/banner-titela.jpg",
+		"perguntas": 15,
+		"subcategorias": 1,
+		"status": 1,
+		"created_at": "2019-12-01 00:00:01",
+		"modified_at": ""
+	},
+	{
+    	"id": 1,
+		"titulo": "Front End",
+		"descricao": "HTML5, CSS, JS, React.js, Ferramentas, Teoria, Bibliotecas e muito mais.",
+		"img": "assets/img/banner.jpg",
+		"perguntas": 213,
+		"subcategorias": 7,
+		"status": 1,
+		"created_at": "2019-12-01 00:00:01",
+		"modified_at": ""
+	},
+	{
+    	"id": 2,
+		"titulo": "Back End",
+		"descricao": "PHP, JS, Node.js, Laravel, WordPress, CMS customizado, Frameworks e muito mais.",
+		"img": "assets/img/banner.jpg",
+		"perguntas": 196,
+		"subcategorias": 7,
+		"status": 1,
+		"created_at": "2019-12-01 00:00:01",
+		"modified_at": ""
+	},
+{
+    	"id": 3,
+		"titulo": "Mercado de Programação",
+		"descricao": "Metodologias, Entrevistas de Trabalho, Cursos, Linguagens, Atualidades e muito mais.",
+		"img": "assets/img/banner.jpg",
+		"perguntas": 13,
+		"subcategorias": 5,
+		"status": 1,
+		"created_at": "2019-12-01 00:00:01",
+		"modified_at": ""
+	}]
+}

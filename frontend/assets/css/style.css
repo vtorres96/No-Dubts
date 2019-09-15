@@ -49,10 +49,10 @@ i.fa, i.far, i.fas, i.fab { /* Quando incluirmos os links poderemos remover essa
 #asideTopoTopPerguntas { /* Deixando o menu aside sempre à vista (inclusive o título de cada 'widget') */
   top: 90px;
 }
-#asideTopoEnq {
+#asideTopoEnq, #asideTopoEnqAjax {
   top: 160px;
 }
-#asideTopoCat { /* Deixando o menu aside sempre à vista (inclusive o título de cada 'widget') */
+#asideTopoCat, #asideTopoCatAjax { /* Deixando o menu aside sempre à vista (inclusive o título de cada 'widget') */
   top: 230px;
 }
 #asideTopoMinhasPerguntas {
