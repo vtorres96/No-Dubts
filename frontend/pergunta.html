@@ -104,8 +104,8 @@
         </nav>
         <nav class="navbar ml-auto d-inline-block">
           <form class="form-inline">
-            <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="button" aria-label="cadastro">Cadastre-se</button>
-            <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="button" aria-label="login">Login</button>
+            <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="button" data-toggle="modal" data-target="#cadastro" aria-label="cadastro">Cadastre-se</button>
+            <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="button" data-toggle="modal" data-target="#login" aria-label="login">Login</button>
           </form>
         </nav>
       </div>
@@ -603,6 +603,115 @@
     </section>
   </footer>
   <!-- Footer - final -->
+  <!-- Modal Cadastro - início -->
+    <div class="modal fade" id="cadastro" tabindex="-1" role="dialog" aria-labelledby="cadastroLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="cadastroLabel">Cadastro</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post" class="form" id="novaPerguntaForm">
+                <div class="form-row mb-3">
+                  <div class="col">
+                    <label for="usuarioNome">Nome</label>
+                    <input type="text" class="form-control" id="usuarioNome" placeholder="Nome" maxlength="80" required>
+                  </div>
+                  <div class="col">
+                    <label for="usuarioSobrenome">Sobrenome</label>
+                    <input type="text" class="form-control" id="usuarioSobrenome" placeholder="Sobrenome" maxlength="80" required>
+                  </div>
+                </div>
+                <div class="form-row mb-3">
+                  <div class="col">
+                    <label for="usuarioApelido">Apelido</label>
+                    <input type="text" class="form-control" id="usuarioApelido" placeholder="Apelido" maxlength="80" required>
+                  </div>
+                  <div class="col">
+                    <label for="usuarioEmail">email</label>
+                    <input type="email" class="form-control" id="usuarioEmail" placeholder="email" maxlength="80" required>
+                  </div>
+                </div>
+                <div class="form-row mb-3">
+                  <div class="col">
+                    <label for="usuarioSenha">Senha</label>
+                    <input type="password" class="form-control" id="usuarioSenha" minlength="8" required>
+                  </div>
+                  <div class="col">
+                    <label for="usuarioAvatar">Confirmar Senha</label>
+                    <input type="password" class="form-control" id="usuarioSenhaConfirm" minlength="8" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="novaCategoriaImagem">Imagem</label>
+                  <div class="input-group mb-3">
+                    <div class="custom-file col-12">
+                      <input type="file" class="custom-file-input" id="novaCategoriaImagem" aria-describedby="categoriaImagemHelp" accept="image/*">
+                      <label class="custom-file-label" for="novaCategoriaImagem">Imagem</label>
+                    </div>
+                    <small id="categoriaImagemHelp" class="col-12 ml-0 pl-0 form-text text-muted">Arquivos nos formatos jpg, jpeg ou png (100 x 100 px) com até 0,5 MB</small>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="agreed">
+                    <label class="form-check-label" for="agreed">
+                      <small>Estou de acordo com as <a href="politicas-de-privacidade.html">políticas do NoDoubt</a></small>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="optin">
+                    <label class="form-check-label" for="optin">
+                      <small>Desejo receber novidades do NoDoubt</small>
+                    </label>
+                  </div>
+                </div>
+              <button type="submit" class="btn btn-success border-0 my-2 my-sm-0 ml-auto text-white float-right" aria-label="cadastrar">Cadastrar</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <small class="text-muted order-2 order-md-1"><i class="fas fa-info-circle mr-1" title="Comentado em"></i> Usuários que postarem conteúdo ofensivo, desrespeitoso e/ou inadequado poderão ser banidos. </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Modal Cadastro - início -->
+
+  <!-- Modal Login - início -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="loginLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post" class="form" id="novaPerguntaForm">
+              <div class="form-row mb-3">
+                <div class="col">
+                  <label for="usuarioEmail">email</label>
+                  <input type="email" class="form-control" id="usuarioEmail" placeholder="email" maxlength="80" required>
+                </div>
+                <div class="col">
+                  <label for="usuarioSenha">Senha</label>
+                  <input type="password" class="form-control" id="usuarioSenha" minlength="8" required>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-success border-0 my-2 my-sm-0 ml-auto text-white float-right" aria-label="login">Login</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <small class="text-muted mr-auto"><a href="#"><i class="fas fa-question-circle mr-1" title="Esqueci a senha"></i> Esqueci a senha.</a></small>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Modal Login - início -->
 </body>
 <!-- Body - final -->
 </html>
