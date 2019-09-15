@@ -16,6 +16,9 @@ a:hover {
   background-position: center; 
   background-size: cover;
 }
+.bannerTitela{ /* Banner topo - topico Titela */
+  background-image: url('../img/banner-titela.jpg');
+}
 .breadcrumb-item+.breadcrumb-item::before { /* Breadcrumb */
   content: '>';
 }
@@ -37,13 +40,19 @@ a:hover {
 i.fa, i.far, i.fas, i.fab { /* Quando incluirmos os links poderemos remover essa parte*/
   cursor: pointer;
 }
-#asideTopoCat, #asideTopoEnq { /* Deixando o menu aside sempre à vista (inclusive o título de cada 'widget') */
+#asideTopoTopPerguntas { /* Deixando o menu aside sempre à vista (inclusive o título de cada 'widget') */
   top: 90px;
 }
 #asideTopoEnq {
   top: 160px;
 }
-#asideTopoThreads {
+#asideTopoCat { /* Deixando o menu aside sempre à vista (inclusive o título de cada 'widget') */
   top: 230px;
+}
+#asideTopoMinhasPerguntas {
+  top: 300px;
+}
+#irParaTopo {
+  top: 750px;
 }
 /* Obs.: incluir regra com js de acrescentar mais 70 px à propriedade top de acordo com o número de 'widgets' no aside */

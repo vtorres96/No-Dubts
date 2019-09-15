@@ -20,8 +20,8 @@
   <meta name="web_author" content="No Doubt | Felipe Veronesi, Marcelo Diament e Victor Torres">
   <meta name="theme-color" content="#000000">
   <!-- OpenGraph e Metas da página -->
-  <title>No Doubt</title>
-  <meta name="title" content="NoDoubt">
+  <title>Nova Pergunta | NoDubt</title>
+  <meta name="title" content="Nova Pergunta | NoDubt">
   <meta property="og:site_name" content="NoDoubt | A node.js case">
   <meta property="og:locale" content="pt-BR">
   <meta name="og:locality" content="São Paulo">
@@ -116,238 +116,128 @@
   <section class="px-3 py-2">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb bg-transparent">
-        <li class="breadcrumb-item active text-secondary" aria-current="page" title="Início">Início</li>
+        <li class="breadcrumb-item"><a href="#" class="text-muted" target="_self" rel="next" title="Início">Início</a></li>
+        <li class="breadcrumb-item active text-secondary" aria-current="page" title="Você está na página 'Nova Pergunta'">Nova Pergunta</li>
       </ol>
     </nav>
   </section>
   <!-- Breadcrumb - final -->
-  <!-- Paginação - início -->
-  <div class="container">
-    <article class="row">
-      <nav aria-label="Categorias" class="paginate col-12 col-md-8">
-        <ul class="pagination justify-content-between">
-          <li class="page-item disabled">
-            <a class="page-link" href="#" tabindex="-1" rel="next" target="_self" title="Acessar primeira página"><i class="fas fa-chevron-left"></i></a>
-          </li>
-          <li class="page-item active" aria-current="page"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 1">1 <span class="sr-only">(current)</span></a></li>
-          <li class="page-item"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 2">2</a></li>
-          <li class="page-item "><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 3">3</a></li>
-          <!-- Observação: ao implementar a paginação dinâmica, o limit deverá ser limitado de acordo com o media query -->
-          <li class="page-item d-none d-md-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 4">4</a></li>
-          <li class="page-item d-none d-md-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 5">5</a></li>
-          <li class="page-item d-none d-lg-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 6">6</a></li>
-          <li class="page-item d-none d-lg-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 7">7</a></li>
-          <li class="page-item"><a class="page-link disabled" href="#" title="Navegue para ver mais páginas">...</a></li>
-          <li class="page-item d-none d-lg-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 144">144</a></li>
-          <li class="page-item d-none d-md-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 233">233</a></li>
-          <li class="page-item d-none d-sm-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 377">377</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" rel="next" target="_self" title="Acessar última página"><i class="fas fa-chevron-right"></i></a>
-          </li>
-        </ul>
-      </nav>
-    </article>
-  </div>
-  <!-- Paginação - final -->
   <!-- Content - início -->
   <div class="container">
     <div class="row">
       <!-- Main - início -->
       <main class="col-12 col-md-8">
-        <!-- Posts - início -->
+        <!-- Novo Comentário - início -->
         <section class="row my-4">
-          <!-- Post User Offline - início -->
-          <div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
-            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
-              <aside class="col-3">
-                <div class="my-2 position-relative user-offline text-center">
-                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
-                  <small>Pink Samuel Jaskow</small>
-                </div>
-                <hr class="col-auto">
-                <div class="d-flex flex-wrap justify-content-center align-items-stretch">
-                  <i class="align-self-center m-3" title="Posts"><span class="badge badge-info badge-pill">112</span></i>
-                  <i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
-                  <i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
-                  <i class="fas fa-tag m-3 text-danger" title="Tageado"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
-                </div>
-              </aside>
-              <section class="col-8">
-                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
-                  <h4 class="text-dark">Titela's Feelings</h4>
-                </a>
-                <p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
-              </section>
-            </article>
-            <aside class="col-12 col-md-2 px-0 py-4">
-              <ul class="list-group d-flex flex-row d-md-block justify-content-around">
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">165</span><span class="text-black-50 d-block">&#9660;</span></li>
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 16</li>
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 63 min</li>
-              </ul>
-            </aside>
-          </div>
-          <!-- Post User Offline - final -->
-          <!-- Post User Online - início -->
-          <div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
-            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
-              <aside class="col-3">
+          <!-- Novo Comentário Seu - início -->
+          <div class="post shadow-sm bg-white rounded-sm p-3 pt-4 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap border">
+            <article class="col-12 d-flex flex-wrap px-0">
+              <aside class="col-12 col-md-3">
                 <div class="my-2 position-relative user-online text-center">
                   <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
                   <small>Samuel Pink Jackson</small>
                 </div>
                 <hr class="col-auto">
                 <div class="d-flex flex-wrap justify-content-center align-items-stretch">
-                  <i class="align-self-center m-3" title="Posts"><span class="badge badge-info badge-pill">112</span></i>
-                  <i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
-                  <i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
-                  <i class="fas fa-tag m-3 text-danger" title="Tageado"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+                  <i class="align-self-center m-2 m-sm-3" title="Comentários"><span class="badge badge-info badge-pill">112</span></i>
+                  <i class="fab fa-font-awesome-flag text-success m-2 m-sm-3" title="Marcado como Destaque"></i>
+                  <i class="fas fa-medal m-2 m-sm-3 text-primary" title="Tópico Campeão"></i>
+                  <i class="fas fa-tag m-2 m-sm-3 text-danger" title="Tageado"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
                 </div>
               </aside>
-              <section class="col-8">
-                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
-                  <h4 class="text-dark">Titela's Feelings</h4>
-                </a>
-                <p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+              <section class="col-12 col-md-9 pt-2">
+                <form action="" method="post" class="form" id="novaPerguntaForm">
+                    <div class="form-group">
+                      <label for="perguntaTitulo">Título da Pergunta</label>
+                      <input type="text" class="form-control" id="perguntaTitulo" aria-describedby="perguntaTituloHelp" placeholder="Insira o título aqui">
+                      <small id="perguntaTituloHelp" class="form-text text-muted">Insira um título objetivo, de até 80 caracteres.</small>
+                    </div>
+                    <div class="form-row mb-3">
+                      <div class="col">
+                        <label for="perguntaCategoria">Categoria</label>
+                        <select class="form-control" id="perguntaCategoria" form="novaPerguntaForm" required name="novaPerguntaCategoria">
+                          <option value="" disabled="disabled" selected>Categorias</option>
+                          <option value="back_end" title="Back End">Back End</option>
+                          <option value="front_end" title="Front End">Front End</option>
+                          <option value="mercado" title="Mercado de Programação">Mercado de Programação</option>
+                          <option value="css" title="CSS">CSS</option>
+                          <option value="html" title="HTML">HTML</option>
+                          <option value="javascript" title="JavaScript">JavaScript</option>
+                          <option value="php" title="PHP">PHP</option>
+                          <option value="laravel" title="Laravel">Laravel</option>
+                          <option value="node" title="Node.js">Node.js</option>                          
+                          <option value="react" title="React.js">React.js</option>                          
+                          <option value="wordpress" title="WordPress">WordPress</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <label for="perguntaSubcategoria">Subcategoria</label>
+                        <select class="form-control" id="perguntaSubcategoria" form="novaPerguntaForm" required name="novaPerguntaSubcategoria">
+                          <option value="" disabled="disabled" selected>Subcategorias</option>
+                          <option value="css" title="CSS">CSS</option>
+                          <option value="html" title="HTML">HTML</option>
+                          <option value="javascript" title="JavaScript">JavaScript</option>
+                          <option value="php" title="PHP">PHP</option>
+                          <option value="laravel" title="Laravel">Laravel</option>
+                          <option value="node" title="Node.js">Node.js</option>                          
+                          <option value="react" title="React.js">React.js</option>                          
+                          <option value="wordpress" title="WordPress">WordPress</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="novaPergunta">Descrição</label>
+                      <textarea class="form-control" id="novaPergunta" rows="3" aria-describedby="novaPerguntaDescricaoHelp" placeholder="Insira sua pergunta" cols="5" rows="4" maxlength="250"></textarea>
+                      <small id="novaPerguntaDescricaoHelp" class="form-text text-muted">Insira uma descrição com no máximo de 250 caracteres</small>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="notificaRespostas">
+                        <label class="form-check-label" for="notificaRespostas">
+                          <small>Quero receber um email quando responderem meu comentário</small>
+                        </label>
+                      </div>
+                    </div>
+                  <button type="submit" class="btn btn-success border-0 my-2 my-sm-0 ml-auto text-white float-right" aria-label="comentar">Comentar</button>
+                </form>
+              </section>
+              <section class="col-12 d-block">
+                <hr class="mt-4">
+                <article class="row d-flex justify-content-between px-3">
+                  <small class="text-muted order-2 order-md-1"><i class="fas fa-info-circle mr-1" title="Comentado em"></i> Usuários que postarem conteúdo ofensivo, desrespeitoso e/ou inadequado poderão ser banidos. </small>
+                </article>
               </section>
             </article>
-            <aside class="col-12 col-md-2 px-0 py-4">
-              <ul class="list-group d-flex flex-row d-md-block justify-content-around">
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">65</span><span class="text-black-50 d-block">&#9660;</span></li>
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 566</li>
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 3 dias</li>
-              </ul>
-            </aside>
           </div>
-          <!-- Post User Online - final -->
-          <!-- Post User Offline - início -->
-          <div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
-            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
-              <aside class="col-3">
-                <div class="my-2 position-relative user-offline text-center">
-                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
-                  <small>Pink Samuel Jaskow</small>
-                </div>
-                <hr class="col-auto">
-                <div class="d-flex flex-wrap justify-content-center align-items-stretch">
-                  <i class="align-self-center m-3" title="Posts"><span class="badge badge-info badge-pill">112</span></i>
-                  <i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
-                  <i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
-                  <i class="fas fa-tag m-3 text-danger" title="Tageado"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
-                </div>
-              </aside>
-              <section class="col-8">
-                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
-                  <h4 class="text-dark">Titela's Feelings</h4>
-                </a>
-                <p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
-              </section>
-            </article>
-            <aside class="col-12 col-md-2 px-0 py-4">
-              <ul class="list-group d-flex flex-row d-md-block justify-content-around">
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">165</span><span class="text-black-50 d-block">&#9660;</span></li>
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 16</li>
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 63 min</li>
-              </ul>
-            </aside>
-          </div>
-          <!-- Post User Offline - final -->
-          <!-- Post User Online - início -->
-          <div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
-            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
-              <aside class="col-3">
-                <div class="my-2 position-relative user-online text-center">
-                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
-                  <small>Samuel Pink Jackson</small>
-                </div>
-                <hr class="col-auto">
-                <div class="d-flex flex-wrap justify-content-center align-items-stretch">
-                  <i class="align-self-center m-3" title="Posts"><span class="badge badge-info badge-pill">112</span></i>
-                  <i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
-                  <i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
-                  <i class="fas fa-tag m-3 text-danger" title="Tageado"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
-                </div>
-              </aside>
-              <section class="col-8">
-                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
-                  <h4 class="text-dark">Titela's Feelings</h4>
-                </a>
-                <p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
-              </section>
-            </article>
-            <aside class="col-12 col-md-2 px-0 py-4">
-              <ul class="list-group d-flex flex-row d-md-block justify-content-around">
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">65</span><span class="text-black-50 d-block">&#9660;</span></li>
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 566</li>
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 3 dias</li>
-              </ul>
-            </aside>
-          </div>
-          <!-- Post User Online - final -->
-          <!-- Post User Offline - início -->
-          <div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
-            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
-              <aside class="col-3">
-                <div class="my-2 position-relative user-offline text-center">
-                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
-                  <small>Pink Samuel Jaskow</small>
-                </div>
-                <hr class="col-auto">
-                <div class="d-flex flex-wrap justify-content-center align-items-stretch">
-                  <i class="align-self-center m-3" title="Posts"><span class="badge badge-info badge-pill">112</span></i>
-                  <i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
-                  <i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
-                  <i class="fas fa-tag m-3 text-danger" title="Tageado"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
-                </div>
-              </aside>
-              <section class="col-8">
-                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
-                  <h4 class="text-dark">Titela's Feelings</h4>
-                </a>
-                <p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
-              </section>
-            </article>
-            <aside class="col-12 col-md-2 px-0 py-4">
-              <ul class="list-group d-flex flex-row d-md-block justify-content-around">
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">165</span><span class="text-black-50 d-block">&#9660;</span></li>
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 16</li>
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 63 min</li>
-              </ul>
-            </aside>
-          </div>
-          <!-- Post User Offline - final -->
-          <!-- Post User Online - início -->
-          <div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
-            <article class="col-12 col-md-10 d-flex flex-wrap px-0">
-              <aside class="col-3">
-                <div class="my-2 position-relative user-online text-center">
-                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
-                  <small>Samuel Pink Jackson</small>
-                </div>
-                <hr class="col-auto">
-                <div class="d-flex flex-wrap justify-content-center align-items-stretch">
-                  <i class="align-self-center m-3" title="Posts"><span class="badge badge-info badge-pill">112</span></i>
-                  <i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
-                  <i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
-                  <i class="fas fa-tag m-3 text-danger" title="Tageado"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
-                </div>
-              </aside>
-              <section class="col-8">
-                <a href="#" target="_self" rel="next" title="Saiba mais sobre Titela's Feelings">
-                  <h4 class="text-dark">Titela's Feelings</h4>
-                </a>
-                <p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
-              </section>
-            </article>
-            <aside class="col-12 col-md-2 px-0 py-4">
-              <ul class="list-group d-flex flex-row d-md-block justify-content-around">
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span class="badge-secondary text-center px-3 py-2">65</span><span class="text-black-50 d-block">&#9660;</span></li>
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-eye"></i> 566</li>
-                <li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i class="fas fa-clock"></i> 3 dias</li>
-              </ul>
-            </aside>
-          </div>
-          <!-- Post User Online - final -->
+          <!-- Novo Comentário Seu - final -->
+        </section>
+        <!-- Novo Comentário - final -->
+        <hr class="col-auto">
+        <!-- Subtítulo - início -->
+        <section class="row mt-4 pl-1">
+          <h5 class="text-black-50"><i class="fas fa-info-circle mr-1"></i> Perguntas relacionadas <small>através do título inserido</small></h5>
+        </section>
+        <!-- Subtítulo - final -->
+        <!-- Paginação - início -->
+        <article class="row mt-4">
+          <nav aria-label="Categorias" class="paginate col-12">
+            <ul class="pagination justify-content-around">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" rel="next" target="_self" title="Acessar primeira página"><i class="fas fa-chevron-left"></i></a>
+              </li>
+              <li class="page-item active" aria-current="page"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 1">1 <span class="sr-only">(current)</span></a></li>
+              <li class="page-item"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 2">2</a></li>
+              <li class="page-item "><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 3">3</a></li>
+              <!-- Observação: ao implementar a paginação dinâmica, o limit deverá ser limitado de acordo com o media query -->
+              <li class="page-item">
+                <a class="page-link" href="#" rel="next" target="_self" title="Acessar última página"><i class="fas fa-chevron-right"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </article>
+        <!-- Paginação - final -->
+        <!-- Posts - início -->
+        <section class="row my-2">
           <!-- Post User Offline - início -->
           <div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
             <article class="col-12 col-md-10 d-flex flex-wrap px-0">
@@ -543,6 +433,25 @@
 
         </section>
         <!-- Posts - final -->
+        <!-- Paginação - início -->
+        <article class="row mt-4">
+          <nav aria-label="Categorias" class="paginate col-12">
+            <ul class="pagination justify-content-around">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" rel="next" target="_self" title="Acessar primeira página"><i class="fas fa-chevron-left"></i></a>
+              </li>
+              <li class="page-item active" aria-current="page"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 1">1 <span class="sr-only">(current)</span></a></li>
+              <li class="page-item"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 2">2</a></li>
+              <li class="page-item "><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 3">3</a></li>
+              <!-- Observação: ao implementar a paginação dinâmica, o limit deverá ser limitado de acordo com o media query -->
+              <li class="page-item">
+                <a class="page-link" href="#" rel="next" target="_self" title="Acessar última página"><i class="fas fa-chevron-right"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </article>
+        <!-- Paginação - final -->
+        
       </main>
       <!-- Main - final -->
 
@@ -656,38 +565,9 @@
       </aside>
       <!-- Aside - final -->
 
-
     </div>
   </div>
   <!-- Content - final -->
-  <!-- Paginação - início -->
-  <div class="container">
-    <article class="row">
-      <nav aria-label="Categorias" class="paginate col-12 col-md-8">
-        <ul class="pagination justify-content-between">
-          <li class="page-item disabled">
-            <a class="page-link" href="#" tabindex="-1" rel="next" target="_self" title="Acessar primeira página"><i class="fas fa-chevron-left"></i></a>
-          </li>
-          <li class="page-item active" aria-current="page"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 1">1 <span class="sr-only">(current)</span></a></li>
-          <li class="page-item"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 2">2</a></li>
-          <li class="page-item "><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 3">3</a></li>
-          <!-- Observação: ao implementar a paginação dinâmica, o limit deverá ser limitado de acordo com o media query -->
-          <li class="page-item d-none d-md-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 4">4</a></li>
-          <li class="page-item d-none d-md-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 5">5</a></li>
-          <li class="page-item d-none d-lg-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 6">6</a></li>
-          <li class="page-item d-none d-lg-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 7">7</a></li>
-          <li class="page-item"><a class="page-link disabled" href="#" title="Navegue para ver mais páginas">...</a></li>
-          <li class="page-item d-none d-lg-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 144">144</a></li>
-          <li class="page-item d-none d-md-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 233">233</a></li>
-          <li class="page-item d-none d-sm-inline"><a class="page-link" href="#" rel="next" target="_self" title="Acessar página 377">377</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" rel="next" target="_self" title="Acessar última página"><i class="fas fa-chevron-right"></i></a>
-          </li>
-        </ul>
-      </nav>
-    </article>
-  </div>
-  <!-- Paginação - final -->
   <!-- Footer - início -->
   <footer class="container-fluid bg-white">
     <section class="row">
