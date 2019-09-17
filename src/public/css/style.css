@@ -1,0 +1,64 @@
+*, html{ /* Resets */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  color: #1abc9c !important;
+}
+.banner{ /* Banner topo */
+  height: 250px;
+  background-image: url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+}
+.bannerTitela{ /* Banner topo - topico Titela */
+  background-image: url('../img/banner-titela.jpg');
+}
+.bannerSubTitela{ /* Banner topo - topico Subtitela */
+  background-image: url('../img/banner-subtitela.jpg');
+}
+.breadcrumb-item+.breadcrumb-item::before { /* Breadcrumb */
+  content: '>';
+}
+.btn-success { /* Estilo btn-success */
+    background-color: #1abc9c;
+}
+.user-online::after, .user-offline::after { /* User status */
+  top: -10%;
+  right: 20%;
+  position: absolute;
+  content:  '\002B24';
+}
+.user-online::after { /* User online */
+  color: #22ff22;
+}
+.user-offline::after { /* User offline */
+  color: #ff2222;
+}
+i.fa, i.far, i.fas, i.fab { /* Quando incluirmos os links poderemos remover essa parte*/
+  cursor: pointer;
+}
+#novaCategoriaCard, #novaSubcategoriaCard { /* Deixando o card de Nova Categoria */
+  top: 65px;
+}
+#asideTopoTopPerguntas { /* Deixando o menu aside sempre à vista (inclusive o título de cada 'widget') */
+  top: 90px;
+}
+#asideTopoEnq, #asideTopoEnqAjax {
+  top: 160px;
+}
+#asideTopoCat, #asideTopoCatAjax { /* Deixando o menu aside sempre à vista (inclusive o título de cada 'widget') */
+  top: 230px;
+}
+#asideTopoMinhasPerguntas {
+  top: 300px;
+}
+#irParaTopo {
+  top: 750px;
+}
+/* Obs.: incluir regra com js de acrescentar mais 70 px à propriedade top de acordo com o número de 'widgets' no aside */
