@@ -1,0 +1,853 @@
+<!-- Paginação - início -->
+<div class="container">
+	<article class="row">
+		<nav aria-label="Categorias" class="paginate col-12 col-md-8">
+			<ul class="pagination justify-content-between">
+				<li class="page-item disabled">
+					<a class="page-link" href="index.html" tabindex="-1" rel="next" target="_self"
+						title="Acessar primeira página"><i class="fas fa-chevron-left"></i></a>
+				</li>
+				<li class="page-item active" aria-current="page"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 1">1 <span class="sr-only">(current)</span></a></li>
+				<li class="page-item"><a class="page-link" href="index.html" rel="next" target="_self"
+						title="Acessar página 2">2</a></li>
+				<li class="page-item "><a class="page-link" href="index.html" rel="next" target="_self"
+						title="Acessar página 3">3</a></li>
+				<!-- Observação: ao implementar a paginação dinâmica, o limit deverá ser limitado de acordo com o media query -->
+				<li class="page-item d-none d-md-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 4">4</a></li>
+				<li class="page-item d-none d-md-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 5">5</a></li>
+				<li class="page-item d-none d-lg-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 6">6</a></li>
+				<li class="page-item d-none d-lg-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 7">7</a></li>
+				<li class="page-item"><a class="page-link disabled" href="index.html"
+						title="Navegue para ver mais páginas">...</a></li>
+				<li class="page-item d-none d-lg-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 144">144</a></li>
+				<li class="page-item d-none d-md-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 233">233</a></li>
+				<li class="page-item d-none d-sm-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 377">377</a></li>
+				<li class="page-item">
+					<a class="page-link" href="index.html" rel="next" target="_self" title="Acessar última página"><i
+							class="fas fa-chevron-right"></i></a>
+				</li>
+			</ul>
+		</nav>
+	</article>
+</div>
+<!-- Paginação - final -->
+<!-- Content - início -->
+<div class="container">
+	<div class="row">
+		<!-- Main - início -->
+		<main class="col-12 col-md-8">
+			<!-- Posts - início -->
+			<section class="row my-4">
+				<!-- Post User Offline - início -->
+				<div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+					<article class="col-12 col-md-10 d-flex flex-wrap px-0">
+						<aside class="col-3">
+							<div class="my-2 position-relative user-offline text-center">
+								<img src="../public/img/perfil-samuel-blue.jpg" alt="" height="50" width="50"
+									class="d-block mx-auto rounded-circle">
+								<small>Blue Sam</small>
+							</div>
+							<hr class="col-auto">
+							<div class="d-flex flex-wrap justify-content-center align-items-stretch">
+								<i class="align-self-center m-3" title="Posts"><span
+										class="badge badge-info badge-pill">112</span></i>
+								<i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
+								<i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
+								<i class="fas fa-tag m-3 text-danger" title="Tageado"></i>
+								<!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+							</div>
+						</aside>
+						<section class="col">
+							<a href="pergunta.html" target="_self" rel="next"
+								title="Saiba mais sobre Titela's Feelings">
+								<h4 class="text-dark">Titela's Feelings</h4>
+							</a>
+							<p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá
+								deprimidis, eu
+								conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae
+								iaculis nisl.
+								Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco
+								de cevadiss, é
+								um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+						</section>
+					</article>
+					<aside class="col-12 col-md-2 px-0 py-4">
+						<ul class="list-group d-flex flex-row d-md-block justify-content-around">
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span
+									class="badge-secondary text-center px-3 py-2">165</span><span
+									class="text-black-50 d-block">&#9660;</span></li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-eye"></i> 16
+							</li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-clock"></i>
+								63 min</li>
+						</ul>
+					</aside>
+				</div>
+				<!-- Post User Offline - final -->
+				<!-- Post User Online - início -->
+				<div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+					<article class="col-12 col-md-10 d-flex flex-wrap px-0">
+						<aside class="col-3">
+							<div class="my-2 position-relative user-online text-center">
+								<img src="../public/img/perfil-samuel-green.jpg" alt="" height="50" width="50"
+									class="d-block mx-auto rounded-circle">
+								<small>Green Sam</small>
+							</div>
+							<hr class="col-auto">
+							<div class="d-flex flex-wrap justify-content-center align-items-stretch">
+								<i class="align-self-center m-3" title="Posts"><span
+										class="badge badge-info badge-pill">112</span></i>
+								<i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
+								<i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
+								<i class="fas fa-tag m-3 text-danger" title="Tageado"></i>
+								<!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+							</div>
+						</aside>
+						<section class="col">
+							<a href="pergunta.html" target="_self" rel="next"
+								title="Saiba mais sobre Titela's Feelings">
+								<h4 class="text-dark">Titela's Feelings</h4>
+							</a>
+							<p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá
+								deprimidis, eu
+								conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae
+								iaculis nisl.
+								Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco
+								de cevadiss, é
+								um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+						</section>
+					</article>
+					<aside class="col-12 col-md-2 px-0 py-4">
+						<ul class="list-group d-flex flex-row d-md-block justify-content-around">
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span
+									class="badge-secondary text-center px-3 py-2">65</span><span
+									class="text-black-50 d-block">&#9660;</span></li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-eye"></i>
+								566</li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-clock"></i>
+								3 dias</li>
+						</ul>
+					</aside>
+				</div>
+				<!-- Post User Online - final -->
+				<!-- Post User Offline - início -->
+				<div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+					<article class="col-12 col-md-10 d-flex flex-wrap px-0">
+						<aside class="col-3">
+							<div class="my-2 position-relative user-offline text-center">
+								<img src="../public/img/perfil-samuel-pink.jpg" alt="" height="50" width="50"
+									class="d-block mx-auto rounded-circle">
+								<small>Pink Sam</small>
+							</div>
+							<hr class="col-auto">
+							<div class="d-flex flex-wrap justify-content-center align-items-stretch">
+								<i class="align-self-center m-3" title="Posts"><span
+										class="badge badge-info badge-pill">112</span></i>
+								<i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
+								<i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
+								<i class="fas fa-tag m-3 text-danger" title="Tageado"></i>
+								<!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+							</div>
+						</aside>
+						<section class="col">
+							<a href="pergunta.html" target="_self" rel="next"
+								title="Saiba mais sobre Titela's Feelings">
+								<h4 class="text-dark">Titela's Feelings</h4>
+							</a>
+							<p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá
+								deprimidis, eu
+								conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae
+								iaculis nisl.
+								Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco
+								de cevadiss, é
+								um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+						</section>
+					</article>
+					<aside class="col-12 col-md-2 px-0 py-4">
+						<ul class="list-group d-flex flex-row d-md-block justify-content-around">
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span
+									class="badge-secondary text-center px-3 py-2">165</span><span
+									class="text-black-50 d-block">&#9660;</span></li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-eye"></i> 16
+							</li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-clock"></i>
+								63 min</li>
+						</ul>
+					</aside>
+				</div>
+				<!-- Post User Offline - final -->
+				<!-- Post User Online - início -->
+				<div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+					<article class="col-12 col-md-10 d-flex flex-wrap px-0">
+						<aside class="col-3">
+							<div class="my-2 position-relative user-online text-center">
+								<img src="../public/img/perfil-samuel-purple.jpg" alt="" height="50" width="50"
+									class="d-block mx-auto rounded-circle">
+								<small>Puple Samuel</small>
+							</div>
+							<hr class="col-auto">
+							<div class="d-flex flex-wrap justify-content-center align-items-stretch">
+								<i class="align-self-center m-3" title="Posts"><span
+										class="badge badge-info badge-pill">112</span></i>
+								<i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
+								<i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
+								<i class="fas fa-tag m-3 text-danger" title="Tageado"></i>
+								<!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+							</div>
+						</aside>
+						<section class="col">
+							<a href="pergunta.html" target="_self" rel="next"
+								title="Saiba mais sobre Titela's Feelings">
+								<h4 class="text-dark">Titela's Feelings</h4>
+							</a>
+							<p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá
+								deprimidis, eu
+								conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae
+								iaculis nisl.
+								Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco
+								de cevadiss, é
+								um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+						</section>
+					</article>
+					<aside class="col-12 col-md-2 px-0 py-4">
+						<ul class="list-group d-flex flex-row d-md-block justify-content-around">
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span
+									class="badge-secondary text-center px-3 py-2">65</span><span
+									class="text-black-50 d-block">&#9660;</span></li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-eye"></i>
+								566</li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-clock"></i>
+								3 dias</li>
+						</ul>
+					</aside>
+				</div>
+				<!-- Post User Online - final -->
+				<!-- Post User Offline - início -->
+				<div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+					<article class="col-12 col-md-10 d-flex flex-wrap px-0">
+						<aside class="col-3">
+							<div class="my-2 position-relative user-offline text-center">
+								<img src="../public/img/perfil-samuel-red.jpg" alt="" height="50" width="50"
+									class="d-block mx-auto rounded-circle">
+								<small>Red Jackson</small>
+							</div>
+							<hr class="col-auto">
+							<div class="d-flex flex-wrap justify-content-center align-items-stretch">
+								<i class="align-self-center m-3" title="Posts"><span
+										class="badge badge-info badge-pill">112</span></i>
+								<i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
+								<i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
+								<i class="fas fa-tag m-3 text-danger" title="Tageado"></i>
+								<!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+							</div>
+						</aside>
+						<section class="col">
+							<a href="pergunta.html" target="_self" rel="next"
+								title="Saiba mais sobre Titela's Feelings">
+								<h4 class="text-dark">Titela's Feelings</h4>
+							</a>
+							<p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá
+								deprimidis, eu
+								conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae
+								iaculis nisl.
+								Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco
+								de cevadiss, é
+								um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+						</section>
+					</article>
+					<aside class="col-12 col-md-2 px-0 py-4">
+						<ul class="list-group d-flex flex-row d-md-block justify-content-around">
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span
+									class="badge-secondary text-center px-3 py-2">165</span><span
+									class="text-black-50 d-block">&#9660;</span></li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-eye"></i> 16
+							</li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-clock"></i>
+								63 min</li>
+						</ul>
+					</aside>
+				</div>
+				<!-- Post User Offline - final -->
+				<!-- Post User Online - início -->
+				<div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+					<article class="col-12 col-md-10 d-flex flex-wrap px-0">
+						<aside class="col-3">
+							<div class="my-2 position-relative user-online text-center">
+								<img src="../public/img/perfil-samuel-yellow.jpg" alt="" height="50" width="50"
+									class="d-block mx-auto rounded-circle">
+								<small>Yellow Sam</small>
+							</div>
+							<hr class="col-auto">
+							<div class="d-flex flex-wrap justify-content-center align-items-stretch">
+								<i class="align-self-center m-3" title="Posts"><span
+										class="badge badge-info badge-pill">112</span></i>
+								<i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
+								<i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
+								<i class="fas fa-tag m-3 text-danger" title="Tageado"></i>
+								<!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+							</div>
+						</aside>
+						<section class="col">
+							<a href="pergunta.html" target="_self" rel="next"
+								title="Saiba mais sobre Titela's Feelings">
+								<h4 class="text-dark">Titela's Feelings</h4>
+							</a>
+							<p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá
+								deprimidis, eu
+								conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae
+								iaculis nisl.
+								Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco
+								de cevadiss, é
+								um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+						</section>
+					</article>
+					<aside class="col-12 col-md-2 px-0 py-4">
+						<ul class="list-group d-flex flex-row d-md-block justify-content-around">
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span
+									class="badge-secondary text-center px-3 py-2">65</span><span
+									class="text-black-50 d-block">&#9660;</span></li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-eye"></i>
+								566</li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-clock"></i>
+								3 dias</li>
+						</ul>
+					</aside>
+				</div>
+				<!-- Post User Online - final -->
+				<!-- Post User Offline - início -->
+				<div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+					<article class="col-12 col-md-10 d-flex flex-wrap px-0">
+						<aside class="col-3">
+							<div class="my-2 position-relative user-offline text-center">
+								<img src="../public/img/perfil-samuel-blue.jpg" alt="" height="50" width="50"
+									class="d-block mx-auto rounded-circle">
+								<small>Blue Sam</small>
+							</div>
+							<hr class="col-auto">
+							<div class="d-flex flex-wrap justify-content-center align-items-stretch">
+								<i class="align-self-center m-3" title="Posts"><span
+										class="badge badge-info badge-pill">112</span></i>
+								<i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
+								<i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
+								<i class="fas fa-tag m-3 text-danger" title="Tageado"></i>
+								<!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+							</div>
+						</aside>
+						<section class="col">
+							<a href="pergunta.html" target="_self" rel="next"
+								title="Saiba mais sobre Titela's Feelings">
+								<h4 class="text-dark">Titela's Feelings</h4>
+							</a>
+							<p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá
+								deprimidis, eu
+								conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae
+								iaculis nisl.
+								Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco
+								de cevadiss, é
+								um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+						</section>
+					</article>
+					<aside class="col-12 col-md-2 px-0 py-4">
+						<ul class="list-group d-flex flex-row d-md-block justify-content-around">
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span
+									class="badge-secondary text-center px-3 py-2">165</span><span
+									class="text-black-50 d-block">&#9660;</span></li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-eye"></i> 16
+							</li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-clock"></i>
+								63 min</li>
+						</ul>
+					</aside>
+				</div>
+				<!-- Post User Offline - final -->
+				<!-- Post User Online - início -->
+				<div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+					<article class="col-12 col-md-10 d-flex flex-wrap px-0">
+						<aside class="col-3">
+							<div class="my-2 position-relative user-online text-center">
+								<img src="../public/img/perfil-samuel-green.jpg" alt="" height="50" width="50"
+									class="d-block mx-auto rounded-circle">
+								<small>Green Sam</small>
+							</div>
+							<hr class="col-auto">
+							<div class="d-flex flex-wrap justify-content-center align-items-stretch">
+								<i class="align-self-center m-3" title="Posts"><span
+										class="badge badge-info badge-pill">112</span></i>
+								<i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
+								<i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
+								<i class="fas fa-tag m-3 text-danger" title="Tageado"></i>
+								<!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+							</div>
+						</aside>
+						<section class="col">
+							<a href="pergunta.html" target="_self" rel="next"
+								title="Saiba mais sobre Titela's Feelings">
+								<h4 class="text-dark">Titela's Feelings</h4>
+							</a>
+							<p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá
+								deprimidis, eu
+								conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae
+								iaculis nisl.
+								Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco
+								de cevadiss, é
+								um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+						</section>
+					</article>
+					<aside class="col-12 col-md-2 px-0 py-4">
+						<ul class="list-group d-flex flex-row d-md-block justify-content-around">
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span
+									class="badge-secondary text-center px-3 py-2">65</span><span
+									class="text-black-50 d-block">&#9660;</span></li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-eye"></i>
+								566</li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-clock"></i>
+								3 dias</li>
+						</ul>
+					</aside>
+				</div>
+				<!-- Post User Online - final -->
+				<!-- Post User Offline - início -->
+				<div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+					<article class="col-12 col-md-10 d-flex flex-wrap px-0">
+						<aside class="col-3">
+							<div class="my-2 position-relative user-offline text-center">
+								<img src="../public/img/perfil-samuel-pink.jpg" alt="" height="50" width="50"
+									class="d-block mx-auto rounded-circle">
+								<small>Pink Sam</small>
+							</div>
+							<hr class="col-auto">
+							<div class="d-flex flex-wrap justify-content-center align-items-stretch">
+								<i class="align-self-center m-3" title="Posts"><span
+										class="badge badge-info badge-pill">112</span></i>
+								<i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
+								<i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
+								<i class="fas fa-tag m-3 text-danger" title="Tageado"></i>
+								<!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+							</div>
+						</aside>
+						<section class="col">
+							<a href="pergunta.html" target="_self" rel="next"
+								title="Saiba mais sobre Titela's Feelings">
+								<h4 class="text-dark">Titela's Feelings</h4>
+							</a>
+							<p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá
+								deprimidis, eu
+								conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae
+								iaculis nisl.
+								Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco
+								de cevadiss, é
+								um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+						</section>
+					</article>
+					<aside class="col-12 col-md-2 px-0 py-4">
+						<ul class="list-group d-flex flex-row d-md-block justify-content-around">
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span
+									class="badge-secondary text-center px-3 py-2">165</span><span
+									class="text-black-50 d-block">&#9660;</span></li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-eye"></i> 16
+							</li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-clock"></i>
+								63 min</li>
+						</ul>
+					</aside>
+				</div>
+				<!-- Post User Offline - final -->
+				<!-- Post User Online - início -->
+				<div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+					<article class="col-12 col-md-10 d-flex flex-wrap px-0">
+						<aside class="col-3">
+							<div class="my-2 position-relative user-online text-center">
+								<img src="../public/img/perfil-samuel-purple.jpg" alt="" height="50" width="50"
+									class="d-block mx-auto rounded-circle">
+								<small>Puple Samuel</small>
+							</div>
+							<hr class="col-auto">
+							<div class="d-flex flex-wrap justify-content-center align-items-stretch">
+								<i class="align-self-center m-3" title="Posts"><span
+										class="badge badge-info badge-pill">112</span></i>
+								<i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
+								<i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
+								<i class="fas fa-tag m-3 text-danger" title="Tageado"></i>
+								<!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+							</div>
+						</aside>
+						<section class="col">
+							<a href="pergunta.html" target="_self" rel="next"
+								title="Saiba mais sobre Titela's Feelings">
+								<h4 class="text-dark">Titela's Feelings</h4>
+							</a>
+							<p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá
+								deprimidis, eu
+								conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae
+								iaculis nisl.
+								Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco
+								de cevadiss, é
+								um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+						</section>
+					</article>
+					<aside class="col-12 col-md-2 px-0 py-4">
+						<ul class="list-group d-flex flex-row d-md-block justify-content-around">
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span
+									class="badge-secondary text-center px-3 py-2">65</span><span
+									class="text-black-50 d-block">&#9660;</span></li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-eye"></i>
+								566</li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-clock"></i>
+								3 dias</li>
+						</ul>
+					</aside>
+				</div>
+				<!-- Post User Online - final -->
+				<!-- Post User Offline - início -->
+				<div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+					<article class="col-12 col-md-10 d-flex flex-wrap px-0">
+						<aside class="col-3">
+							<div class="my-2 position-relative user-offline text-center">
+								<img src="../public/img/perfil-samuel-red.jpg" alt="" height="50" width="50"
+									class="d-block mx-auto rounded-circle">
+								<small>Red Jackson</small>
+							</div>
+							<hr class="col-auto">
+							<div class="d-flex flex-wrap justify-content-center align-items-stretch">
+								<i class="align-self-center m-3" title="Posts"><span
+										class="badge badge-info badge-pill">112</span></i>
+								<i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
+								<i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
+								<i class="fas fa-tag m-3 text-danger" title="Tageado"></i>
+								<!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+							</div>
+						</aside>
+						<section class="col">
+							<a href="pergunta.html" target="_self" rel="next"
+								title="Saiba mais sobre Titela's Feelings">
+								<h4 class="text-dark">Titela's Feelings</h4>
+							</a>
+							<p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá
+								deprimidis, eu
+								conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae
+								iaculis nisl.
+								Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco
+								de cevadiss, é
+								um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+						</section>
+					</article>
+					<aside class="col-12 col-md-2 px-0 py-4">
+						<ul class="list-group d-flex flex-row d-md-block justify-content-around">
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span
+									class="badge-secondary text-center px-3 py-2">165</span><span
+									class="text-black-50 d-block">&#9660;</span></li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-eye"></i> 16
+							</li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-clock"></i>
+								63 min</li>
+						</ul>
+					</aside>
+				</div>
+				<!-- Post User Offline - final -->
+				<!-- Post User Online - início -->
+				<div class="post shadow-sm bg-white rounded-sm p-3 pt-5 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap">
+					<article class="col-12 col-md-10 d-flex flex-wrap px-0">
+						<aside class="col-3">
+							<div class="my-2 position-relative user-online text-center">
+								<img src="../public/img/perfil-samuel-yellow.jpg" alt="" height="50" width="50"
+									class="d-block mx-auto rounded-circle">
+								<small>Yellow Sam</small>
+							</div>
+							<hr class="col-auto">
+							<div class="d-flex flex-wrap justify-content-center align-items-stretch">
+								<i class="align-self-center m-3" title="Posts"><span
+										class="badge badge-info badge-pill">112</span></i>
+								<i class="fab fa-font-awesome-flag text-success m-3" title="Marcado como Destaque"></i>
+								<i class="fas fa-medal m-3 text-primary" title="Tópico Campeão"></i>
+								<i class="fas fa-tag m-3 text-danger" title="Tageado"></i>
+								<!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+							</div>
+						</aside>
+						<section class="col">
+							<a href="pergunta.html" target="_self" rel="next"
+								title="Saiba mais sobre Titela's Feelings">
+								<h4 class="text-dark">Titela's Feelings</h4>
+							</a>
+							<p class="text-black-50 text-justify mt-3">Mussum Ipsum, cacilds vidis litro abertis. Tá
+								deprimidis, eu
+								conheço uma cachacis que pode alegrar sua vidis. Aenean aliquam molestie leo, vitae
+								iaculis nisl.
+								Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Suco
+								de cevadiss, é
+								um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+						</section>
+					</article>
+					<aside class="col-12 col-md-2 px-0 py-4">
+						<ul class="list-group d-flex flex-row d-md-block justify-content-around">
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><span
+									class="badge-secondary text-center px-3 py-2">65</span><span
+									class="text-black-50 d-block">&#9660;</span></li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-eye"></i>
+								566</li>
+							<li class="list-group-item bg-white text-black-50 text-center border-0 mb-3"><i
+									class="fas fa-clock"></i>
+								3 dias</li>
+						</ul>
+					</aside>
+				</div>
+				<!-- Post User Online - final -->
+
+			</section>
+			<!-- Posts - final -->
+		</main>
+		<!-- Main - final -->
+
+
+		<!-- Aside - início -->
+		<aside class="col-12 col-md-4 pl-4 my-4">
+			<!-- Aside Nav > Principais Perguntas - início -->
+			<article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-3 my-4 sticky-top"
+				id="asideTopoTopPerguntas">
+				<section class="col-12">
+					<a href="index.html" target="_self" rel="next" title="Acesse todas as perguntas">
+						<h4 class="text-dark">Principais Perguntas</h4>
+					</a>
+					<hr class="col-auto">
+					<ul class="list-group text-black-50">
+						<li class="list-group-item border-left-0 border-right-0 border-top-0 px-0"><a
+								href="pergunta.html" class="text-black-50" rel="next" target="_self"
+								title="Como configurar meu localhost?">Como configurar
+								meu localhost?</a></li>
+						<li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html"
+								class="text-black-50" rel="next" target="_self"
+								title="Como capturar dados de uma API?">Como capturar dados de uma API?</a>
+						</li>
+						<li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html"
+								class="text-black-50" rel="next" target="_self"
+								title="Como registrar dados em um banco?">Como registrar dados em um
+								banco?</a></li>
+						<li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html"
+								class="text-black-50" rel="next" target="_self"
+								title="Como transformar JSON em um Objeto?">Como transformar JSON em um
+								Objeto?</a></li>
+						<li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html"
+								class="text-black-50" rel="next" target="_self"
+								title="Como transformar JSON em um Array?">Como transformar JSON em um
+								Array?</a></li>
+						<li class="list-group-item border-left-0 border-right-0 border-bottom-0 px-0"><a
+								href="pergunta.html" class="text-black-50" rel="next" target="_self"
+								title="Como salvar um novo usuário cadastrado?">Como
+								salvar um novo usuário cadastrado?</a></li>
+					</ul>
+				</section>
+			</article>
+			<!-- Aside Nav > Principais Perguntas - final -->
+			<!-- Aside Nav > Enquete da Semana - início -->
+			<article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-3 my-4 sticky-top" id="asideTopoEnq">
+				<section class="col-12">
+					<a href="#" target="_self" rel="next" title="Acesse todas as enquetes">
+						<h4 class="text-dark">Enquete da Semana</h4>
+					</a>
+					<hr class="col-auto">
+					<p>Qual tema está estudando essa semana?</p>
+					<!-- Progress Bar #01 -->
+					<div class="row d-flex flex-row flex-nowrap mb-3">
+						<div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+								role="progressbar" style="width: 48%;" aria-valuenow="48" aria-valuemin="0"
+								aria-valuemax="100">POO</div>
+						</div>
+						<button class="btn btn-secondary col-2 py-0" aria-label="selecionar">&#10003;</button>
+					</div>
+					<!-- Progress Bar #02 -->
+					<div class="row d-flex flex-row flex-nowrap mb-3">
+						<div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+								role="progressbar" style="width: 21%;" aria-valuenow="21" aria-valuemin="0"
+								aria-valuemax="100">POO</div>
+						</div>
+						<button class="btn btn-success col-2 py-0" aria-label="selecionar">&#10003;</button>
+					</div>
+					<!-- Progress Bar #03 -->
+					<div class="row d-flex flex-row flex-nowrap mb-3">
+						<div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+								style="width: 16%;" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100">PDO</div>
+						</div>
+						<button class="btn btn-secondary col-2 py-0" aria-label="selecionar">&#10003;</button>
+					</div>
+					<!-- Progress Bar #04 -->
+					<div class="row d-flex flex-row flex-nowrap mb-3">
+						<div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+								role="progressbar" style="width: 8%;" aria-valuenow="8" aria-valuemin="0"
+								aria-valuemax="100">POO</div>
+						</div>
+						<button class="btn btn-secondary col-2 py-0" aria-label="selecionar">&#10003;</button>
+					</div>
+					<!-- Progress Bar #05 -->
+					<div class="row d-flex flex-row flex-nowrap mb-3">
+						<div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+								role="progressbar" style="width: 7%;" aria-valuenow="7" aria-valuemin="0"
+								aria-valuemax="100">POO</div>
+						</div>
+						<button class="btn btn-secondary col-2 py-0" aria-label="selecionar">&#10003;</button>
+					</div>
+					<small class="text-muted">Votações até dia 01/10/2019</small>
+				</section>
+			</article>
+			<!-- Aside Nav > Enquete da Semana - final -->
+			<!-- Aside Nav > Categorias - início -->
+			<article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-3 my-4 sticky-top" id="asideTopoCat">
+				<section class="col-12">
+					<a href="index.html" target="_self" rel="next" title="Acesse todas as Categorias">
+						<h4 class="text-dark">Principais Categorias</h4>
+					</a>
+					<hr class="col-auto">
+					<ul class="list-group text-black-50">
+						<li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a
+								href="categoria.html" class="text-black-50" target="_self" rel="next"
+								title="Saiba mais sobre Mercado de Programação">Mercado de Programação</a><span
+								class="badge badge-secondary badge-pill">34</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a
+								href="categoria.html" class="text-black-50" target="_self" rel="next"
+								title="Saiba mais sobre Conceitos e Paradigmas">Conceitos e Paradigmas</a><span
+								class="badge badge-secondary badge-pill">21</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a
+								href="categoria.html" class="text-black-50" target="_self" rel="next"
+								title="Saiba mais sobre Metodologias">Metodologias</a><span
+								class="badge badge-secondary badge-pill">13</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a
+								href="categoria.html" class="text-black-50" target="_self" rel="next"
+								title="Saiba mais sobre Sintaxe, Variáveis e Funções">Sintaxe, Variáveis e
+								Funções</a><span class="badge badge-secondary badge-pill">8</span></li>
+						<li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a
+								href="categoria.html" class="text-black-50" target="_self" rel="next"
+								title="Saiba mais sobre Front End">Front End</a><span
+								class="badge badge-secondary badge-pill">5</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a
+								href="categoria.html" class="text-black-50" target="_self" rel="next"
+								title="Saiba mais sobre Back End">Back End</a><span
+								class="badge badge-secondary badge-pill">3</span>
+						</li>
+					</ul>
+				</section>
+			</article>
+			<!-- Aside Nav > Categorias - final -->
+			<!-- Aside Nav > Minhas Perguntas - início -->
+			<article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-3 my-4 sticky-top"
+				id="asideTopoMinhasPerguntas">
+				<section class="col-12">
+					<a href="#" target="_self" rel="next" title="Acesse todas as perguntas">
+						<h4 class="text-dark">Minhas Perguntas</h4>
+					</a>
+					<hr class="col-auto">
+					<ul class="list-group text-black-50">
+						<li class="list-group-item border-left-0 border-right-0 border-top-0 px-0"><a
+								href="pergunta.html" class="text-black-50" rel="next" target="_self"
+								title="Como configurar meu localhost?">Como configurar
+								meu localhost?</a></li>
+						<li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html"
+								class="text-black-50" rel="next" target="_self"
+								title="Como capturar dados de uma API?">Como capturar dados de uma API?</a>
+						</li>
+						<li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html"
+								class="text-black-50" rel="next" target="_self"
+								title="Como registrar dados em um banco?">Como registrar dados em um
+								banco?</a></li>
+						<li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html"
+								class="text-black-50" rel="next" target="_self"
+								title="Como transformar JSON em um Objeto?">Como transformar JSON em um
+								Objeto?</a></li>
+						<li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html"
+								class="text-black-50" rel="next" target="_self"
+								title="Como transformar JSON em um Array?">Como transformar JSON em um
+								Array?</a></li>
+						<li class="list-group-item border-left-0 border-right-0 border-bottom-0 px-0"><a
+								href="pergunta.html" class="text-black-50" rel="next" target="_self"
+								title="Como salvar um novo usuário cadastrado?">Como
+								salvar um novo usuário cadastrado?</a></li>
+					</ul>
+				</section>
+			</article>
+			<!-- Aside Nav > Minhas Perguntas - final -->
+			<!-- Aside Nav > Ir para o Topo - início -->
+			<a href="#top" class="btn btn-success border-0 my-2 my-sm-0 ml-auto text-white float-right sticky-top"
+				aria-label="topo" id="irParaTopo">Topo</a>
+			<!-- Aside Nav > Ir para o Topo - final -->
+		</aside>
+		<!-- Aside - final -->
+
+
+	</div>
+</div>
+<!-- Content - final -->
+<!-- Paginação - início -->
+<div class="container">
+	<article class="row">
+		<nav aria-label="Categorias" class="paginate col-12 col-md-8">
+			<ul class="pagination justify-content-between">
+				<li class="page-item disabled">
+					<a class="page-link" href="index.html" tabindex="-1" rel="next" target="_self"
+						title="Acessar primeira página"><i class="fas fa-chevron-left"></i></a>
+				</li>
+				<li class="page-item active" aria-current="page"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 1">1 <span class="sr-only">(current)</span></a></li>
+				<li class="page-item"><a class="page-link" href="index.html" rel="next" target="_self"
+						title="Acessar página 2">2</a></li>
+				<li class="page-item "><a class="page-link" href="index.html" rel="next" target="_self"
+						title="Acessar página 3">3</a></li>
+				<!-- Observação: ao implementar a paginação dinâmica, o limit deverá ser limitado de acordo com o media query -->
+				<li class="page-item d-none d-md-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 4">4</a></li>
+				<li class="page-item d-none d-md-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 5">5</a></li>
+				<li class="page-item d-none d-lg-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 6">6</a></li>
+				<li class="page-item d-none d-lg-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 7">7</a></li>
+				<li class="page-item"><a class="page-link disabled" href="index.html"
+						title="Navegue para ver mais páginas">...</a></li>
+				<li class="page-item d-none d-lg-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 144">144</a></li>
+				<li class="page-item d-none d-md-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 233">233</a></li>
+				<li class="page-item d-none d-sm-inline"><a class="page-link" href="index.html" rel="next"
+						target="_self" title="Acessar página 377">377</a></li>
+				<li class="page-item">
+					<a class="page-link" href="index.html" rel="next" target="_self" title="Acessar última página"><i
+							class="fas fa-chevron-right"></i></a>
+				</li>
+			</ul>
+		</nav>
+	</article>
+</div>
+<!-- Paginação - final -->

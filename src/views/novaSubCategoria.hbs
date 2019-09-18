@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Head - início -->
+<head>
+  <!-- Metas Genéricos -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5, shrink-to-fit=no">
+  <meta http-equiv="Cache-control" content="public">
+  <meta name="revisit-after" content="30 days">
+  <meta name="identifier-URL" content="https://djament.com.br/nodoubt/index.php">
+  <meta name="abstract" content="NoDoubt | A node.js Case">
+  <meta name="author" content="Felipe Veronesi, Marcelo Diament e Victor Torres">
+  <meta name="robots" content="index,follow">
+  <meta name="contact" content="contato@djament.com.br">
+  <meta name="reply-to" content="contato@djament.com.br">
+  <meta name="copyright" content="NoDoubt | Felipe Veronesi, Marcelo Diament e Victor Torres">
+  <meta name="rating" content="general">
+  <meta name="web_author" content="No Doubt | Felipe Veronesi, Marcelo Diament e Victor Torres">
+  <meta name="theme-color" content="#000000">
+  <!-- OpenGraph e Metas da página -->
+  <title>Nova Subcategoria | NoDubt</title>
+  <meta name="title" content="Nova Subcategoria | NoDubt">
+  <meta property="og:site_name" content="NoDoubt | A node.js case">
+  <meta property="og:locale" content="pt-BR">
+  <meta name="og:locality" content="São Paulo">
+  <meta name="og:region" content="SP">
+  <meta name="og:country-name" content="BR">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/logo.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="NoDoubt | A node.js case">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="shortcut icon" sizes="99x65" href="assets/img/logo.png">
+  <link rel="icon" type="image/png" sizes="99x65" href="assets/img/logo.png">  
+  <link rel="canonical" href="https://djament.com.br/nodoubt">
+  <meta name="description" content="Um case de node.js construído por Felipe Veronsei, Marcelo Diament e Victor Torres">
+  <meta property="og:title" content="NoDoubt">
+  <meta property="og:description" content="Um case de node.js construído por Felipe Veronsei, Marcelo Diament e Victor Torres">
+  <meta property="og:url" content="https://djament.com.br/nodoubt/index.php">
+  <meta property="og:image:alt" content="NoDoubt | A node.js case">
+  <meta property="og:image:url" content="assets/img/logo.png">
+  <meta property="og:image:type" content="img/png">
+  <meta name="keywords" content="node.js, node, js, js framework, backend, frontend, fullstack, programação, web, desenvolvimento, web develop">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Default CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Default Minified CSS -->
+  <!-- <link rel="stylesheet" href="assets/css/style.min.css" /> -->
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/fce8f2d243.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <script defer src="assets/js/bootstrap.js"></script>
+  <script defer src="assets/js/bootstrap.bundle.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<!-- Head - final -->
+<!-- Body - início -->
+<body class="container-fluid p-0 bg-light">
+  <!-- Banner - início -->
+  <!-- Obs.: creio que possamos melhorar esse banner (incluindo no header, por exemplo) -->
+  <div class="banner" style="height:250px;"></div>
+  <!-- Banner - final -->
+  <!-- Header - início -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" id="menuTopo">
+      <a class="navbar-brand" href="index.html" title="Início" target="_self" rel="next">
+        <img src="assets/img/logo.png" width="auto" height="65" class="d-inline-block align-top border-right" alt="No Doubt" id="logoTopo"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuSuperior"
+        aria-controls="menuSuperior" aria-expanded="false" aria-label="Alterna navegação" title="Exibir Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="menuSuperior">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link text-black-50" href="index.html" title="Categorias" target="_self" rel="next">Categorias</a>
+          </li>
+<!--           <li class="nav-item">
+            <a class="nav-link text-black-50" href="#" title="Perguntas" target="_self" rel="next">Perguntas</a>
+          </li> -->
+        </ul>
+        <nav class="navbar mx-auto d-inline-block">
+          <form class="form-inline" action="resultados.html" method="get">
+            <div class="form-group d-flex flex-row flex-nowrap align-items-center">
+              <input class="form-control" type="search" placeholder="Pesquisar"
+                aria-label="Pesquisar" name="pesquisaInput" id="pesquisaInput"/>
+              <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="submit" aria-label="pesquisar" id="pesquisar">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </nav>
+        <nav class="navbar ml-auto d-inline-block">
+          <form class="form-inline">
+            <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="button" data-toggle="modal" data-target="#cadastro" aria-label="cadastro">Cadastre-se</button>
+            <button class="btn btn-success border-0 my-2 my-sm-0 ml-2 text-white" type="button" data-toggle="modal" data-target="#login" aria-label="login">Login</button>
+          </form>
+        </nav>
+      </div>
+    </nav>
+  </header>
+  <!-- Header - final -->
+  <!-- Breadcrumb - início -->
+  <section class="px-3 py-2">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb bg-transparent">
+        <li class="breadcrumb-item"><a href="index.html" class="text-muted" target="_self" rel="next" title="Início">Início</a></li>
+        <li class="breadcrumb-item active text-secondary" aria-current="page" title="Você está na página 'Nova Subcategoria'">Nova Subcategoria</li>
+      </ol>
+    </nav>
+  </section>
+  <!-- Breadcrumb - final -->
+  <!-- Content - início -->
+  <div class="container">
+    <div class="row">
+      <!-- Main - início -->
+      <main class="col-12 col-md-8">
+        <!-- Nova Subcategoria - início -->
+        <section class="row my-4 sticky-top" id="novaSubcategoriaCard">
+          <!-- Nova Subcategoria Seu - início -->
+          <div class="post shadow-sm bg-white rounded-sm p-3 pt-4 my-4 mx-3 mx-md-1 d-flex flex-row flex-wrap border" >
+            <article class="col-12 d-flex flex-wrap px-0">
+              <aside class="col-12 col-md-3">
+                <div class="my-2 position-relative user-online text-center">
+                  <img src="assets/img/profile.jpg" alt="" height="50" width="50" class="d-block mx-auto rounded-circle">
+                  <small>Samuel Pink Jackson</small>
+                </div>
+                <hr class="col-auto">
+                <div class="d-flex flex-wrap justify-content-center align-items-stretch">
+                  <i class="align-self-center m-2 m-sm-3" title="Comentários"><span class="badge badge-info badge-pill">112</span></i>
+                  <i class="fab fa-font-awesome-flag text-success m-2 m-sm-3" title="Marcado como Destaque"></i>
+                  <i class="fas fa-medal m-2 m-sm-3 text-primary" title="Tópico Campeão"></i>
+                  <i class="fas fa-tag m-2 m-sm-3 text-danger" title="Tageado"></i> <!-- Por algum motivo, esse último item ficou desalinhado, por isso as classes distintas -->
+                </div>
+              </aside>
+              <section class="col-12 col-md-9 pt-2">
+                <form action="" method="post" class="form" id="novaSubcategoriaForm" enctype="multipart/form-data">
+                  <div class="form-row">
+                    <div class="form-group col">
+                      <label for="SubcategoriaTitulo">Título da Subcategoria</label>
+                      <input type="text" class="form-control" id="subcategoriaTitulo" aria-describedby="subcategoriaTituloHelp" placeholder="Insira o título aqui" maxlength="50">
+                      <small id="subcategoriaTituloHelp" class="form-text text-muted">Insira um título objetivo, de até 50 caracteres</small>
+                    </div>
+                    <div class="form-group col-2">
+                      <label for="subcategoriaOrdem">Ordem</label>
+                      <input type="number" class="form-control" id="subcategoriaOrdem" placeholder="0" max="99" maxlength="2">
+                    </div>
+                  </div>
+                  <div class="form-row mb-3">
+                    <div class="col">
+                      <label for="subcategoriaCategoria">Categoria</label>
+                      <select class="form-control" id="subcategoriaCategoria" form="novaPerguntaForm" required name="subcategoriaCovacategoria">
+                        <option value="" disabled="disabled" selected>Categorias</option>
+                        <option value="back_end" title="Back End">Back End</option>
+                        <option value="front_end" title="Front End">Front End</option>
+                        <option value="mercado" title="Mercado de Programação">Mercado de Programação</option>
+                        <option value="css" title="CSS">CSS</option>
+                        <option value="html" title="HTML">HTML</option>
+                        <option value="javascript" title="JavaScript">JavaScript</option>
+                        <option value="php" title="PHP">PHP</option>
+                        <option value="laravel" title="Laravel">Laravel</option>
+                        <option value="node" title="Node.js">Node.js</option>                          
+                        <option value="react" title="React.js">React.js</option>                          
+                        <option value="wordpress" title="WordPress">WordPress</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="novaSubcategoriaImagem">Imagem</label>
+                    <div class="input-group mb-3">
+                      <div class="custom-file col-12">
+                        <input type="file" class="custom-file-input" id="novaSubcategoriaImagem" aria-describedby="subcategoriaImagemHelp" accept="image/*">
+                        <label class="custom-file-label" for="novaSubcategoriaImagem">Imagem</label>
+                      </div>
+                      <small id="subcategoriaImagemHelp" class="col-12 ml-0 pl-0 form-text text-muted">Arquivos nos formatos jpg, jpeg ou png (1200 x 700 px) com até 1 MB</small>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="novaSubcategoriaDescricao">Descrição</label>
+                    <textarea class="form-control" id="novaSubcategoriaDescricao" rows="3" aria-describedby="novaSubcategoriaDescricaoHelp" placeholder="Descreva a nova Subcategoria" cols="5" rows="4" maxlength="90"></textarea>
+                    <small id="novaSubcategoriaDescricaoHelp" class="form-text text-muted">Insira uma descrição com no máximo de 90 caracteres</small>
+                  </div>
+                  <button type="submit" class="btn btn-success border-0 my-2 my-sm-0 ml-auto text-white float-right" aria-label="comentar">Comentar</button>
+                </form>
+              </section>
+              <section class="col-12 d-block">
+                <hr class="mt-4">
+                <article class="row d-flex justify-content-between px-3">
+                  <small class="text-muted order-2 order-md-1"><i class="fas fa-info-circle mr-1" title="Comentado em"></i> Usuários que postarem conteúdo ofensivo, desrespeitoso e/ou inadequado poderão ser banidos. </small>
+                </article>
+              </section>
+            </article>
+          </div>
+          <!-- Nova Categoria Seu - final -->
+        </section>
+        <!-- Nova Categoria - final -->
+        
+      </main>
+      <!-- Main - final -->
+
+
+      <!-- Aside - início -->
+      <aside class="col-12 col-md-4 pl-4 my-4">
+          <!-- Aside Nav > Principais Perguntas - início -->
+          <article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-3 my-4 sticky-top" id="asideTopoTopPerguntas">
+            <section class="col-12">
+              <a href="index.html" target="_self" rel="next" title="Acesse todas as perguntas">
+                <h4 class="text-dark">Principais Perguntas</h4>
+              </a>
+              <hr class="col-auto">
+              <ul class="list-group text-black-50">
+                <li class="list-group-item border-left-0 border-right-0 border-top-0 px-0"><a href="pergunta.html" class="text-black-50" rel="next" target="_self" title="Como configurar meu localhost?">Como configurar meu localhost?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html" class="text-black-50" rel="next" target="_self" title="Como capturar dados de uma API?">Como capturar dados de uma API?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html" class="text-black-50" rel="next" target="_self" title="Como registrar dados em um banco?">Como registrar dados em um banco?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html" class="text-black-50" rel="next" target="_self" title="Como transformar JSON em um Objeto?">Como transformar JSON em um Objeto?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html" class="text-black-50" rel="next" target="_self" title="Como transformar JSON em um Array?">Como transformar JSON em um Array?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 border-bottom-0 px-0"><a href="pergunta.html" class="text-black-50" rel="next" target="_self" title="Como salvar um novo usuário cadastrado?">Como salvar um novo usuário cadastrado?</a></li>
+              </ul>
+            </section>
+          </article>
+          <!-- Aside Nav > Principais Perguntas - final -->
+          <!-- Aside Nav > Enquete da Semana - início -->
+          <article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-3 my-4 sticky-top" id="asideTopoEnq">
+            <section class="col-12">
+              <a href="#" target="_self" rel="next" title="Acesse todas as enquetes">
+                <h4 class="text-dark">Enquete da Semana</h4>
+              </a>
+              <hr class="col-auto">
+              <p>Qual tema está estudando essa semana?</p>
+              <!-- Progress Bar #01 -->
+              <div class="row d-flex flex-row flex-nowrap mb-3">
+                <div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 48%;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">POO</div>
+                </div>
+                <button class="btn btn-secondary col-2 py-0" aria-label="selecionar">&#10003;</button>
+              </div>
+              <!-- Progress Bar #02 -->
+              <div class="row d-flex flex-row flex-nowrap mb-3">
+                <div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 21%;" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100">POO</div>
+                </div>
+                <button class="btn btn-success col-2 py-0" aria-label="selecionar">&#10003;</button>
+              </div>
+              <!-- Progress Bar #03 -->
+              <div class="row d-flex flex-row flex-nowrap mb-3">
+                <div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 16%;" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100">PDO</div>
+                </div>
+                <button class="btn btn-secondary col-2 py-0" aria-label="selecionar">&#10003;</button>
+              </div>
+              <!-- Progress Bar #04 -->
+              <div class="row d-flex flex-row flex-nowrap mb-3">
+                <div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 8%;" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100">POO</div>
+                </div>
+                <button class="btn btn-secondary col-2 py-0" aria-label="selecionar">&#10003;</button>
+              </div>
+              <!-- Progress Bar #05 -->
+              <div class="row d-flex flex-row flex-nowrap mb-3">
+                <div class="progress col-9 pl-0 mr-auto ml-3" style="height: 30px;">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 7%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100">POO</div>
+                </div>
+                <button class="btn btn-secondary col-2 py-0" aria-label="selecionar">&#10003;</button>
+              </div>
+              <small class="text-muted">Votações até dia 01/10/2019</small>
+            </section>
+          </article>
+          <!-- Aside Nav > Enquete da Semana - final -->
+          <!-- Aside Nav > Categorias - início -->
+          <article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-3 my-4 sticky-top" id="asideTopoCat">
+            <section class="col-12">
+              <a href="index.html" target="_self" rel="next" title="Acesse todas as Categorias">
+                <h4 class="text-dark">Principais Categorias</h4>
+              </a>
+              <hr class="col-auto">
+              <ul class="list-group text-black-50">
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a href="categoria.html" class="text-black-50" target="_self" rel="next" title="Saiba mais sobre Mercado de Programação">Mercado de Programação</a><span class="badge badge-secondary badge-pill">34</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a href="categoria.html" class="text-black-50" target="_self" rel="next" title="Saiba mais sobre Conceitos e Paradigmas">Conceitos e Paradigmas</a><span class="badge badge-secondary badge-pill">21</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a href="categoria.html" class="text-black-50" target="_self" rel="next" title="Saiba mais sobre Metodologias">Metodologias</a><span class="badge badge-secondary badge-pill">13</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a href="categoria.html" class="text-black-50" target="_self" rel="next" title="Saiba mais sobre Sintaxe, Variáveis e Funções">Sintaxe, Variáveis e Funções</a><span class="badge badge-secondary badge-pill">8</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a href="categoria.html" class="text-black-50" target="_self" rel="next" title="Saiba mais sobre Front End">Front End</a><span class="badge badge-secondary badge-pill">5</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0"><a href="categoria.html" class="text-black-50" target="_self" rel="next" title="Saiba mais sobre Back End">Back End</a><span class="badge badge-secondary badge-pill">3</span></li>
+              </ul>
+            </section>
+          </article>
+          <!-- Aside Nav > Categorias - final -->
+          <!-- Aside Nav > Minhas Perguntas - início -->
+          <article class="col-12 d-flex flex-row shadow-sm bg-white rounded-sm p-3 my-4 sticky-top" id="asideTopoMinhasPerguntas">
+            <section class="col-12">
+              <a href="#" target="_self" rel="next" title="Acesse todas as perguntas">
+                <h4 class="text-dark">Minhas Perguntas</h4>
+              </a>
+              <hr class="col-auto">
+              <ul class="list-group text-black-50">
+                <li class="list-group-item border-left-0 border-right-0 border-top-0 px-0"><a href="pergunta.html" class="text-black-50" rel="next" target="_self" title="Como configurar meu localhost?">Como configurar meu localhost?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html" class="text-black-50" rel="next" target="_self" title="Como capturar dados de uma API?">Como capturar dados de uma API?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html" class="text-black-50" rel="next" target="_self" title="Como registrar dados em um banco?">Como registrar dados em um banco?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html" class="text-black-50" rel="next" target="_self" title="Como transformar JSON em um Objeto?">Como transformar JSON em um Objeto?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 px-0"><a href="pergunta.html" class="text-black-50" rel="next" target="_self" title="Como transformar JSON em um Array?">Como transformar JSON em um Array?</a></li>
+                <li class="list-group-item border-left-0 border-right-0 border-bottom-0 px-0"><a href="pergunta.html" class="text-black-50" rel="next" target="_self" title="Como salvar um novo usuário cadastrado?">Como salvar um novo usuário cadastrado?</a></li>
+              </ul>
+            </section>
+          </article>
+          <!-- Aside Nav > Minhas Perguntas - final -->
+          <!-- Aside Nav > Ir para o Topo - início -->
+          <a href="#top" class="btn btn-success border-0 my-2 my-sm-0 ml-auto text-white float-right sticky-top" aria-label="topo" id="irParaTopo">Topo</a>
+          <!-- Aside Nav > Ir para o Topo - final -->
+      </aside>
+      <!-- Aside - final -->
+
+    </div>
+  </div>
+  <!-- Content - final -->
+  <!-- Footer - início -->
+  <footer class="container-fluid bg-white">
+    <section class="row">
+      <a class="navbar-brand col-2 my-2" href="index.html" title="Início" target="_self" rel="next">
+        <img src="assets/img/logo.png" width="auto" height="50" class="d-inline-block align-top" alt="No Doubt" id="logoRodape"/>
+      </a>
+      <small class="text-center col-8 my-4">Copyright &lt; <b><a href="index.html" title="Início" target="_self" rel="next">NoDoubt</a></b> /&gt; &copy;</small>
+      <nav class="col-auto ml-auto my-4">
+        <a href="https://facebook.com" title="Acesse nossa página no facebook" rel="nofollower" target="_blank"><i class="fab fa-facebook text-black-50 ml-2"></i></a>
+        <a href="https://instagram.com" title="Acesse nossa página no instagram" rel="nofollower" target="_blank"><i class="fab fa-instagram text-black-50 ml-2"></i></a>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511999999999" title="Acesse nossa página no whatsapp" rel="nofollower" target="_blank"><i class="fab fa-whatsapp text-black-50 ml-2"></i></a>
+        <a href="https://linkedin.com" title="Acesse nossa página no linkedin" rel="nofollower" target="_blank"><i class="fab fa-linkedin text-black-50 ml-2"></i></a>
+      </nav>
+    </section>
+  </footer>
+  <!-- Footer - final -->
+  <!-- Modal Cadastro - início -->
+    <div class="modal fade" id="cadastro" tabindex="-1" role="dialog" aria-labelledby="cadastroLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="cadastroLabel">Cadastro</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post" class="form" id="novaPerguntaForm">
+                <div class="form-row mb-3">
+                  <div class="col">
+                    <label for="usuarioNome">Nome</label>
+                    <input type="text" class="form-control" id="usuarioNome" placeholder="Nome" maxlength="80" required>
+                  </div>
+                  <div class="col">
+                    <label for="usuarioSobrenome">Sobrenome</label>
+                    <input type="text" class="form-control" id="usuarioSobrenome" placeholder="Sobrenome" maxlength="80" required>
+                  </div>
+                </div>
+                <div class="form-row mb-3">
+                  <div class="col">
+                    <label for="usuarioApelido">Apelido</label>
+                    <input type="text" class="form-control" id="usuarioApelido" placeholder="Apelido" maxlength="80" required>
+                  </div>
+                  <div class="col">
+                    <label for="usuarioEmail">email</label>
+                    <input type="email" class="form-control" id="usuarioEmail" placeholder="email" maxlength="80" required>
+                  </div>
+                </div>
+                <div class="form-row mb-3">
+                  <div class="col">
+                    <label for="usuarioSenha">Senha</label>
+                    <input type="password" class="form-control" id="usuarioSenha" minlength="8" required>
+                  </div>
+                  <div class="col">
+                    <label for="usuarioAvatar">Confirmar Senha</label>
+                    <input type="password" class="form-control" id="usuarioSenhaConfirm" minlength="8" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="novaCategoriaImagem">Imagem</label>
+                  <div class="input-group mb-3">
+                    <div class="custom-file col-12">
+                      <input type="file" class="custom-file-input" id="novaCategoriaImagem" aria-describedby="categoriaImagemHelp" accept="image/*">
+                      <label class="custom-file-label" for="novaCategoriaImagem">Imagem</label>
+                    </div>
+                    <small id="categoriaImagemHelp" class="col-12 ml-0 pl-0 form-text text-muted">Arquivos nos formatos jpg, jpeg ou png (100 x 100 px) com até 0,5 MB</small>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="agreed">
+                    <label class="form-check-label" for="agreed">
+                      <small>Estou de acordo com as <a href="politicas-de-privacidade.html">políticas do NoDoubt</a></small>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="optin">
+                    <label class="form-check-label" for="optin">
+                      <small>Desejo receber novidades do NoDoubt</small>
+                    </label>
+                  </div>
+                </div>
+              <button type="submit" class="btn btn-success border-0 my-2 my-sm-0 ml-auto text-white float-right" aria-label="cadastrar">Cadastrar</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <small class="text-muted order-2 order-md-1"><i class="fas fa-info-circle mr-1" title="Comentado em"></i> Usuários que postarem conteúdo ofensivo, desrespeitoso e/ou inadequado poderão ser banidos. </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Modal Cadastro - início -->
+
+  <!-- Modal Login - início -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="loginLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post" class="form" id="novaPerguntaForm">
+              <div class="form-row mb-3">
+                <div class="col">
+                  <label for="usuarioEmail">email</label>
+                  <input type="email" class="form-control" id="usuarioEmail" placeholder="email" maxlength="80" required>
+                </div>
+                <div class="col">
+                  <label for="usuarioSenha">Senha</label>
+                  <input type="password" class="form-control" id="usuarioSenha" minlength="8" required>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-success border-0 my-2 my-sm-0 ml-auto text-white float-right" aria-label="login">Login</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <small class="text-muted mr-auto"><a href="#"><i class="fas fa-question-circle mr-1" title="Esqueci a senha"></i> Esqueci a senha.</a></small>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Modal Login - início -->
+</body>
+<!-- Body - final -->
+</html>
