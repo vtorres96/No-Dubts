@@ -1,12 +1,44 @@
 const express = require('express');
+const hbs = require('express-handlebars');
+const path = require('path');
 
+// importing dotenv with environment variables
+require('dotenv').config();
+
+// instantiating express
 const app = express();
 
 const http = require('http');
 
+// instantiating http
 const server = http.createServer(app);
 
-server.listen(3333, () => {
+// importing routes
+const routes = require('./routes/routes');
+
+// hability assets
+app.use('/public', express.static(path.join(__dirname, '/public')));
+
+// setting template engine
+app.engine(
+  'hbs',
+  hbs({
+    defaultLayout: 'master.hbs',
+    extname: '.hbs'
+  })
+);
+
+// specifying path to views
+app.set('views', path.join(__dirname, './views'));
+
+// specifying template engine
+app.set('view engine', 'hbs');
+
+// adding routes
+app.use(routes);
+
+// server listener
+server.listen(process.env.PORT, () => {
   // eslint-disable-next-line no-console
-  console.log('Servidor rodando na porta: 3333');
+  console.log(`Listening on port ${process.env.PORT}`);
 });
