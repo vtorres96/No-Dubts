@@ -32,6 +32,10 @@ routes.get('/perguntas', async (req, res) => {
   await res.render('pergunta.hbs');
 });
 
+routes.get('/perguntas/adicionar', async (req, res) => {
+  await res.render('novaPergunta.hbs');
+});
+
 // Privacy Policies
 routes.get('/politicas', async (req, res) => {
   await res.render('politicasDePrivacidade.hbs');
