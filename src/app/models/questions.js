@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
 	);
 	Questions.associate = function(models) {
 		// associations can be defined here
-		Questions.belongsTo(models.User), Questions.belongsTo(models.Category);
+		// Questions.belongsTo(models.User), Questions.belongsTo(models.Category);
 	};
 	return Questions;
 };
