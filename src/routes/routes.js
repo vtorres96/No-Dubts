@@ -3,7 +3,17 @@ const UserController = require('../app/controllers/userController');
 
 const routes = express.Router();
 
-routes.get('/dev-route', UserController.index);
+routes.get('/dev-route/', UserController.index)
+routes.get('/dev-route/:id', UserController.buscarPorId)
+routes.get('/dev-route/deletar/:id', UserController.deleteUser)
+
+
+// Edituser
+// routes.get('/edit-user/:id', UserController.updateUser)
+routes.post('/edit-user/:id', UserController.updateUser)
+
+// Register user
+routes.post('/register-user', UserController.createUser)
 
 // Home
 routes.get('/', async (req, res) => {
@@ -53,5 +63,6 @@ routes.get('/resultados', async (req, res) => {
 routes.get('/sub-categorias', async (req, res) => {
 	await res.render('subCategoria.hbs');
 });
+
 
 module.exports = routes;

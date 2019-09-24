@@ -34,6 +34,10 @@ app.set('views', path.join(__dirname, './views'));
 // specifying template engine
 app.set('view engine', 'hbs');
 
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
+
+
 // adding routes
 app.use(routes);
 

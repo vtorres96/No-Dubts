@@ -16,11 +16,19 @@ module.exports = {
 				type: Sequelize.STRING,
 				allowNull: false
 			},
+			nickname: {
+				type: Sequelize.STRING,
+				allowNull: false
+			},
+			image: {
+				type: Sequelize.STRING,
+				allowNull: true
+			},
 			email: {
 				type: Sequelize.STRING,
 				allowNull: false
 			},
-			passwordHash: {
+			password_hash: {
 				type: Sequelize.STRING,
 				allowNull: false
 			},
@@ -29,11 +37,11 @@ module.exports = {
 				defaultValue: false,
 				allowNull: false
 			},
-			created_at: {
+			createdAt: {
 				allowNull: false,
 				type: Sequelize.DATE
 			},
-			updated_at: {
+			updatedAt: {
 				allowNull: false,
 				type: Sequelize.DATE
 			}
