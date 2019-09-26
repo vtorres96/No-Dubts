@@ -11,10 +11,12 @@
 		"dev": "nodemon src/server.js --ignore __tests__"
 	},
 	"dependencies": {
+		"bcrypt": "^3.0.6",
 		"date-fns": "^2.2.1",
 		"dotenv": "^8.1.0",
 		"express": "^4.17.1",
 		"express-handlebars": "^3.1.0",
+		"express-session": "^1.16.2",
 		"multer": "^1.4.2",
 		"mysql2": "^1.7.0",
 		"path": "^0.12.7",
